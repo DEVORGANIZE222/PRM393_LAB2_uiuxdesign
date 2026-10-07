@@ -1,9 +1,25 @@
-# CapstoneMatch (EXE Team Formation App)
+# EXEMatching (Capstone Team Formation App)
 **PRM323 — Lab 2: AI-Assisted UI/UX Design (Google Stitch → Figma)**
 
 - **Group Name:** Group8
 - **Class:** SE1920
 - **Figma File (Public View Link):** `https://www.figma.com/design/Z42q9LamOZojK54FSBDcCd/PRM_LAB2?node-id=1-6&t=BbIncMZGSu1fgmSM-1`
+- **Google Stitch Project Link:** `https://stitch.withgoogle.com/projects/4915176011526231419`
+- **Interactive Web Showcase (Dành cho Giảng Viên):** Mở trực tiếp file [`index.html`](./index.html) trên trình duyệt hoặc chạy `python -m http.server 8080` rồi truy cập `http://localhost:8080`.
+
+---
+
+## 🌟 Visual UI/UX Case Study Showcase Web App
+Để giảng viên có thể xem trực quan toàn bộ đồ án thay vì chỉ đọc tài liệu văn bản, dự án đã xây dựng sẵn một trang web Interactive Showcase hoàn chỉnh:
+- **Truy cập nhanh:** Mở file [`index.html`](./index.html) bằng Chrome / Edge / Firefox.
+- **Tính năng trực quan trên Web:**
+  1. **Interactive Persona Profile:** Hình ảnh nhân vật Minh (20 tuổi), thói quen thiết bị Xiaomi 13, ngữ cảnh di chuyển, mục tiêu và rào cản.
+  2. **Information Architecture & Interactive User Flows:** Sơ đồ phân cấp màn hình và 3 luồng người dùng (Happy path, Alternative path, Error & Recovery).
+  3. **Visual Design System:** Bảng màu WCAG 2.1 AA/AAA với contrast badges, Typography scale, Spacing 8pt và Component tokens.
+  4. **Google Stitch AI Iterations (Before vs After):** So sánh trực quan trước và sau khi lặp prompt cho 3 vấn đề thiết kế lớn.
+  5. **Nielsen Heuristics & WCAG 2.1 Audit:** Bảng đánh giá 10 nguyên lý với bộ lọc độ nghiêm trọng (High / Medium) và nhật ký quyết định (Accepted / Modified).
+  6. **Mobile Phone Mockup Simulator (9 Màn hình):** Khung điện thoại Android 360×800dp tương tác, click chọn từng màn hình SCR_01 đến SCR_09 để xem chi tiết thông số và mục đích.
+  7. **Flutter Developer Handoff:** Bảng chuyển đổi Design Tokens sang ThemeData và Widgets kèm code mẫu Dart.
 
 ---
 
@@ -20,6 +36,7 @@
 
 | Deliverable | Location in Repository | Description |
 |---|---|---|
+| **🌐 Interactive Web Showcase** | [`index.html`](./index.html) | Trang web trực quan đầy đủ nộp cho giảng viên (Persona, Flows, Before/After Stitch, Phone Simulator, Specs). |
 | **Persona & Problem Statement** | [`ux/persona.md`](./ux/persona.md) | Primary persona, goals, pain points, one-sentence problem, measurable success metric. |
 | **IA & User Flows** | [`ux/user-flow.md`](./ux/user-flow.md) | Screen inventory, hierarchical IA, 3 Mermaid diagrams (including error/recovery). |
 | **Design Brief** | [`design/DESIGN.md`](./design/DESIGN.md) | Design tokens, color palette, typography scale, spacing rules, and component rules given to Stitch. |
