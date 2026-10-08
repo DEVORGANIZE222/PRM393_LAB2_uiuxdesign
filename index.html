@@ -51,19 +51,6 @@
         </div>
       </a>
 
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#overview" class="nav-link active">Overview</a></li>
-          <li><a href="#persona" class="nav-link">Persona</a></li>
-          <li><a href="#userflows" class="nav-link">User Flows</a></li>
-          <li><a href="#designsystem" class="nav-link">Design System</a></li>
-          <li><a href="#stitch-ai" class="nav-link">Google Stitch AI</a></li>
-          <li><a href="#heuristics" class="nav-link">UX Audit</a></li>
-          <li><a href="#gallery" class="nav-link">Mockup Phone</a></li>
-          <li><a href="#handoff" class="nav-link">Flutter Handoff</a></li>
-        </ul>
-      </nav>
-
       <div class="header-actions">
         <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -76,7 +63,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          Google Stitch
+          <span class="btn-label">Google Stitch</span>
         </a>
         <a href="https://www.figma.com/design/Z42q9LamOZojK54FSBDcCd/PRM_LAB2?node-id=1-6&t=BbIncMZGSu1fgmSM-1"
           target="_blank" rel="noopener noreferrer" class="btn-external-link btn-figma">
@@ -87,8 +74,26 @@
             <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" fill="#F24E1E" />
             <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" fill="#A259FF" />
           </svg>
-          Figma File
+          <span class="btn-label">Figma File</span>
         </a>
+      </div>
+    </div>
+
+    <!-- Section Tab Bar -->
+    <div class="nav-bar">
+      <div class="container">
+        <nav aria-label="Sections">
+          <ul class="nav-menu">
+            <li><a href="#overview" class="nav-link active"><span class="nav-index">00</span>Overview</a></li>
+            <li><a href="#persona" class="nav-link"><span class="nav-index">01</span>Persona</a></li>
+            <li><a href="#userflows" class="nav-link"><span class="nav-index">02</span>User Flows</a></li>
+            <li><a href="#designsystem" class="nav-link"><span class="nav-index">03</span>Design System</a></li>
+            <li><a href="#stitch-ai" class="nav-link"><span class="nav-index">04</span>Google Stitch AI</a></li>
+            <li><a href="#heuristics" class="nav-link"><span class="nav-index">05</span>UX Audit</a></li>
+            <li><a href="#gallery" class="nav-link"><span class="nav-index">06</span>Mockup Phone</a></li>
+            <li><a href="#handoff" class="nav-link"><span class="nav-index">07</span>Flutter Handoff</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -538,7 +543,7 @@
         <!-- Token 1: Primary Orange -->
         <div class="token-color-card">
           <div class="token-color-preview" style="background-color: #F27024;">
-            <span class="token-contrast-pill">4.8:1 on White</span>
+            <span class="token-contrast-pill">2.95:1 · Large text only</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
@@ -566,7 +571,7 @@
         <!-- Token 3: Text Primary -->
         <div class="token-color-card">
           <div class="token-color-preview" style="background-color: #1A1D1E;">
-            <span class="token-contrast-pill">15.6:1 (AAA)</span>
+            <span class="token-contrast-pill">17.0:1 (AAA)</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
@@ -581,7 +586,7 @@
         <!-- Token 4: Text Secondary -->
         <div class="token-color-card">
           <div class="token-color-preview" style="background-color: #596066;">
-            <span class="token-contrast-pill">5.4:1 (AA)</span>
+            <span class="token-contrast-pill">6.4:1 (AA)</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
@@ -595,7 +600,7 @@
         <!-- Token 5: Success Green -->
         <div class="token-color-card">
           <div class="token-color-preview" style="background-color: #0D8244;">
-            <span class="token-contrast-pill">5.1:1 (AA)</span>
+            <span class="token-contrast-pill">4.9:1 (AA)</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
@@ -609,7 +614,7 @@
         <!-- Token 6: Error Red -->
         <div class="token-color-card">
           <div class="token-color-preview" style="background-color: #BA1A1A;">
-            <span class="token-contrast-pill">6.2:1 (AA)</span>
+            <span class="token-contrast-pill">6.5:1 (AA)</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
@@ -774,12 +779,10 @@
                 Prompt</button>
             </div>
             <div class="prompt-code">Refine the Group Cards in SCR_03 (Browse Groups):
-              1. Add a distinct visual badge in top-right corner: Green background (#E6F4EA) with text #0D8244 "3/5
-              Slots Filled - 2 Open".
-              2. For full groups (5/5), show gray badge "Full (5/5)" and disable CTA.
-              3. Include 5 avatar circles in a row: 3 filled student avatars + 2 gray dashed placeholder circles with
-              "+" icon.
-              4. Primary button labeled "View Details & Join" with min 48dp height and #F27024 background.</div>
+1. Add a distinct visual badge in top-right corner: Green background (#E6F4EA) with text #0D8244 "3/5 Slots Filled - 2 Open".
+2. For full groups (5/5), show gray badge "Full (5/5)" and disable CTA.
+3. Include 5 avatar circles in a row: 3 filled student avatars + 2 gray dashed placeholder circles with "+" icon.
+4. Primary button labeled "View Details & Join" with min 48dp height and #F27024 background.</div>
           </div>
         </div>
 
@@ -832,13 +835,10 @@
                 data-copy-text="Generate error and recovery state for SCR_07 (Lock Review) when team has only 3/5 members: 1. Display prominent Error Alert Banner: background #FDF2F2, border #BA1A1A, bold text: 'Ineligible to Lock Roster: Your team has 3 members. FPT Capstone regulations require at least 4 members.' 2. Disable CTA button 'Lock Team Roster'. 3. Add Recovery Card: 'Need 1 more member? You can invite unassigned students from Waiting Pool' with secondary button 'Invite from Pool'.">Copy
                 Prompt</button>
             </div>
-            <div class="prompt-code">Generate error and recovery state for SCR_07 (Lock Review) when team has only 3/5
-              members:
-              1. Display prominent Error Alert Banner: background #FDF2F2, border #BA1A1A, bold text: "Ineligible to
-              Lock Roster: Your team has 3 members. FPT Capstone regulations require at least 4 members."
-              2. Disable CTA button "Lock Team Roster" (gray background #E1E3E5).
-              3. Add Recovery Card: "Need 1 more member? You can invite unassigned students from Waiting Pool" with
-              secondary button "Invite from Pool".</div>
+            <div class="prompt-code">Generate error and recovery state for SCR_07 (Lock Review) when team has only 3/5 members:
+1. Display prominent Error Alert Banner: background #FDF2F2, border #BA1A1A, bold text: "Ineligible to Lock Roster: Your team has 3 members. FPT Capstone regulations require at least 4 members."
+2. Disable CTA button "Lock Team Roster" (gray background #E1E3E5).
+3. Add Recovery Card: "Need 1 more member? You can invite unassigned students from Waiting Pool" with secondary button "Invite from Pool".</div>
           </div>
         </div>
 
@@ -892,12 +892,10 @@
                 Prompt</button>
             </div>
             <div class="prompt-code">Redesign Screen SCR_06 (Leader Voting):
-              1. Turn each candidate into an interactive Selectable Card with minimum height of 64dp (exceeding 48x48dp
-              target).
-              2. Increase text contrast: Candidate name in 16sp bold (#1A1D1E - 15.6:1), role in 14sp (#596066 - 5.4:1).
-              3. Selected state features 2dp solid border in #F27024, light orange background tint (#FFF1E8), and large
-              24dp checkmark circle.
-              4. Display real-time vote tally pills (e.g., "2 votes received") using #0D8244 for front-runner.</div>
+1. Turn each candidate into an interactive Selectable Card with minimum height of 64dp (exceeding 48x48dp target).
+2. Increase text contrast: Candidate name in 16sp bold (#1A1D1E - 15.6:1), role in 14sp (#596066 - 5.4:1).
+3. Selected state features 2dp solid border in #F27024, light orange background tint (#FFF1E8), and large 24dp checkmark circle.
+4. Display real-time vote tally pills (e.g., "2 votes received") using #0D8244 for front-runner.</div>
           </div>
         </div>
       </div>
@@ -1020,9 +1018,19 @@
         <div class="phone-mockup-wrapper">
           <div class="phone-device">
             <div class="phone-screen">
-              <div class="phone-notch"></div>
-              <img id="phoneScreenImg" src="assets/figma/SCR_01_ Sign In (FPT SSO).png" alt="Active Screen Mockup"
+              <div class="phone-status-bar" aria-hidden="true">
+                <span class="phone-time">9:41</span>
+                <span class="phone-notch"></span>
+                <span class="phone-status-icons">
+                  <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="4.3" y="5.5" width="3" height="6.5" rx="1"/><rect x="8.6" y="3" width="3" height="9" rx="1"/><rect x="12.9" y="0" width="3" height="12" rx="1"/></svg>
+                  <svg width="22" height="12" viewBox="0 0 22 12" fill="none"><rect x="0.5" y="0.5" width="18" height="11" rx="3" stroke="currentColor" opacity="0.5"/><rect x="2" y="2" width="13" height="8" rx="1.6" fill="currentColor"/><rect x="19.8" y="4" width="1.6" height="4" rx="0.8" fill="currentColor" opacity="0.5"/></svg>
+                </span>
+              </div>
+              <div class="phone-screen-scroll" id="phoneScreenScroll">
+                <img id="phoneScreenImg" src="assets/figma/SCR_01_ Sign In (FPT SSO).png" alt="Active Screen Mockup"
                 class="phone-screen-img zoomable-img">
+              </div>
+              <div class="phone-home-indicator" aria-hidden="true"></div>
             </div>
           </div>
         </div>
@@ -1209,7 +1217,7 @@
         </p>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+      <div class="handoff-grid">
         <div class="card-box">
           <h4 class="card-box-title">Tokens to Flutter ThemeData Mapping</h4>
           <table class="type-specimen-table">
@@ -1330,7 +1338,7 @@
   <div id="lightboxModal" class="lightbox-modal">
     <div class="lightbox-content">
       <button id="lightboxClose" class="lightbox-close">&times;</button>
-      <img id="lightboxImage" src="" alt="Zoomed Preview" class="lightbox-image">
+      <img id="lightboxImage" alt="Zoomed Preview" class="lightbox-image">
       <div id="lightboxCaption" class="lightbox-caption"></div>
     </div>
   </div>
