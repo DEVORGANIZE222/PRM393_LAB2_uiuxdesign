@@ -1232,19 +1232,6 @@ body {
   color: var(--color-text-primary);
 }
 
-/* SECTION 7: Flutter Handoff */
-.handoff-code-container {
-  background-color: #0E1318;
-  border: 1px solid #232930;
-  border-radius: var(--radius-lg);
-  padding: var(--spacing-24);
-  color: #E6EDF3;
-  font-family: var(--font-code);
-  font-size: 0.85rem;
-  line-height: 1.6;
-  overflow-x: auto;
-}
-
 /* Modal Lightbox */
 .lightbox-modal {
   position: fixed;
