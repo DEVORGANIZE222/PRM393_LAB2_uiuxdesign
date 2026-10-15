@@ -34,10 +34,10 @@ function initThemeToggle() {
 function updateThemeIcon(btn, theme) {
   if (theme === 'dark') {
     btn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
-    btn.setAttribute('title', 'Switch to Light Mode');
+    btn.setAttribute('title', 'Chuyển sang giao diện sáng');
   } else {
     btn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
-    btn.setAttribute('title', 'Switch to Dark Mode');
+    btn.setAttribute('title', 'Chuyển sang giao diện tối');
   }
 }
 
@@ -45,174 +45,174 @@ function updateThemeIcon(btn, theme) {
 const screensData = {
   'SCR_01': {
     code: 'SCR_01',
-    title: 'Sign In (FPT University SSO)',
+    title: 'Đăng nhập (SSO Đại học FPT)',
     image: 'assets/figma/SCR_01_ Sign In (FPT SSO).png',
-    purpose: 'Authenticate students using institutional credentials (@fpt.edu.vn) and initialize their role and semester registration status.',
-    flow: 'Entry point for all flows (Auth & Onboarding)',
+    purpose: 'Xác thực sinh viên bằng tài khoản trường (@fpt.edu.vn), khởi tạo vai trò và trạng thái đăng ký học kỳ.',
+    flow: 'Điểm bắt đầu của mọi luồng (Đăng nhập & khởi tạo)',
     actions: [
-      'Tap "Continue with Google (@fpt.edu.vn)" button',
-      'Redirect to OAuth institutional authentication flow',
-      'Initialize student profile, semester status, and skill tags'
+      'Chọn nút "Tiếp tục với Google (@fpt.edu.vn)"',
+      'Chuyển đến quy trình xác thực OAuth của trường',
+      'Khởi tạo hồ sơ sinh viên, trạng thái học kỳ và nhãn kỹ năng'
     ],
     displayedContent: [
-      'FPT EXEMatching logo & branding header',
-      'Semester subtitle: "Spring 2026 Capstone Registration"',
-      'Google SSO Button (min-height 48dp, high affordance)',
-      'Institutional domain restriction note'
+      'Logo EXEMatching và nhận diện thương hiệu FPT',
+      'Phụ đề học kỳ: "Đăng ký đồ án tốt nghiệp kỳ Spring 2026"',
+      'Nút đăng nhập Google SSO (cao tối thiểu 48dp, dễ nhận biết)',
+      'Ghi chú giới hạn tên miền trường'
     ],
-    decisions: 'Restricted domain to eliminate non-FPT accounts; clear 48dp button ensures single-tap success on Android.'
+    decisions: 'Giới hạn tên miền để loại trừ tài khoản không thuộc FPT; nút cao 48dp giúp thao tác thuận tiện trên Android.'
   },
   'SCR_02': {
     code: 'SCR_02',
-    title: 'Dashboard / Home Hub',
+    title: 'Tổng quan / Trang chủ',
     image: 'assets/figma/SCR_02_ Dashboard.png',
-    purpose: 'High-level executive summary of registration deadlines, team formation status, and rapid discovery access.',
-    flow: 'Start point for Flow 1 (Discover & Join)',
+    purpose: 'Tóm tắt thời hạn đăng ký, tình trạng lập nhóm và lối tắt để tìm nhóm.',
+    flow: 'Điểm bắt đầu Luồng 1 (Tìm và tham gia nhóm)',
     actions: [
-      'Tap "Browse Available Teams" to enter discovery',
-      'Inspect relative urgency countdown to deadline',
-      'Switch persistent bottom navigation tabs'
+      'Chọn "Tìm nhóm còn chỗ" để bắt đầu tìm kiếm',
+      'Xem đồng hồ đếm ngược đến hạn đăng ký',
+      'Chuyển giữa các mục trên thanh điều hướng dưới'
     ],
     displayedContent: [
-      'Dynamic countdown banner ("⏳ 2 Days 14 Hours Left")',
-      'Current Team Status card ("Not in a Team" or "Team AI-04 - 3/5")',
-      'Quick action CTA cards',
-      'Registration milestones & guidelines checklist'
+      'Biểu ngữ đếm ngược ("⏳ Còn 2 ngày 14 giờ")',
+      'Thẻ trạng thái nhóm ("Chưa có nhóm" hoặc "Nhóm AI-04 - 3/5")',
+      'Thẻ thao tác nhanh',
+      'Danh sách mốc thời gian và quy định đăng ký'
     ],
-    decisions: 'Replaced static raw timestamp with relative countdown (Heuristic #6: Recognition over Recall).'
+    decisions: 'Thay thời điểm tĩnh bằng đồng hồ đếm ngược (Nguyên tắc #6: Nhận biết thay vì ghi nhớ).'
   },
   'SCR_03': {
     code: 'SCR_03',
-    title: 'Browse Groups List',
+    title: 'Danh sách nhóm đang tuyển',
     image: 'assets/figma/SCR_03_ Browse Groups.png',
-    purpose: 'Discover and filter active Capstone groups actively seeking student roles with clear capacity indicators.',
-    flow: 'Flow 1: Discover & Join Capstone Group',
+    purpose: 'Tìm và lọc các nhóm đồ án đang tuyển thành viên, với chỉ báo số chỗ rõ ràng.',
+    flow: 'Luồng 1: Tìm và tham gia nhóm đồ án',
     actions: [
-      'Search by team name or keyword',
-      'Filter with horizontal chips ("Open Slots Only", "AI/ML", "Web")',
-      'Tap "View Details & Join" on any team card'
+      'Tìm theo tên nhóm hoặc từ khóa',
+      'Lọc bằng thẻ ("Chỉ nhóm còn chỗ", "AI/ML", "Web")',
+      'Chọn "Xem chi tiết và tham gia" trên thẻ nhóm'
     ],
     displayedContent: [
-      'Top search bar + Filter chips',
-      'Group cards with explicit 5-avatar slot row (3 filled, 2 dashed)',
-      'Capacity badge ("3/5 Slots Filled - 2 Open")',
-      'High-contrast tech tag badges (#343A40 on #E9ECEF, 7.2:1 contrast)'
+      'Thanh tìm kiếm phía trên và các thẻ bộ lọc',
+      'Thẻ nhóm có 5 vị trí đại diện (3 đã có người, 2 nét đứt)',
+      'Nhãn sức chứa ("3/5 vị trí đã có người - còn 2 chỗ")',
+      'Nhãn kỹ năng có độ tương phản cao (#343A40 trên #E9ECEF, tỷ lệ 7,2:1)'
     ],
-    decisions: 'Stitch Iteration 1 transformed ambiguous 3/5 text into visual avatar slots and high-contrast badges (WCAG AAA).'
+    decisions: 'Vòng tinh chỉnh Stitch 1 thay số 3/5 khó hiểu bằng vị trí avatar trực quan và nhãn tương phản cao (WCAG AAA).'
   },
   'SCR_04': {
     code: 'SCR_04',
-    title: 'Group Detail & Skill Matrix',
+    title: 'Chi tiết nhóm & ma trận kỹ năng',
     image: 'assets/figma/SCR_04_ Group Detail.png',
-    purpose: 'Deep inspection of a specific group\'s members, desired skill gaps, and submission of join request.',
-    flow: 'Flow 1: Discover & Join Capstone Group',
+    purpose: 'Xem kỹ thành viên, kỹ năng nhóm đang cần và gửi yêu cầu tham gia.',
+    flow: 'Luồng 1: Tìm và tham gia nhóm đồ án',
     actions: [
-      'Review existing members and technical roles',
-      'Inspect open slot skill criteria (e.g., "Looking for: Backend")',
-      'Tap primary bottom CTA "Request to Join Team"'
+      'Xem thành viên hiện tại và vai trò chuyên môn',
+      'Kiểm tra kỹ năng cần bổ sung (ví dụ: "Đang tìm: Backend")',
+      'Chọn nút chính phía dưới "Gửi yêu cầu tham gia nhóm"'
     ],
     displayedContent: [
-      'Team title & Capstone project domain',
-      'Detailed member cards (avatar, name, role, skills)',
-      'Open slot placeholders with target tech tags',
-      'Fixed bottom bar with high-affordance CTA'
+      'Tên nhóm và lĩnh vực đồ án',
+      'Thẻ thành viên chi tiết (ảnh đại diện, tên, vai trò, kỹ năng)',
+      'Vị trí trống kèm nhãn kỹ năng cần tìm',
+      'Thanh cố định phía dưới với nút hành động dễ nhận biết'
     ],
-    decisions: 'Fixed bottom bar with 48dp touch target ensures effortless one-handed thumb interaction on Android baseline.'
+    decisions: 'Thanh cố định có vùng chạm 48dp giúp thao tác bằng một tay thuận tiện trên Android.'
   },
   'SCR_05': {
     code: 'SCR_05',
-    title: 'My Group Hub (Workspace)',
+    title: 'Nhóm của tôi (Không gian làm việc)',
     image: 'assets/figma/SCR_05_ My Group Hub.png',
-    purpose: 'Core team workspace to monitor roster capacity, elect leadership, communicate, and initiate roster locking.',
-    flow: 'Hub for Flow 1 (End), Flow 2 (Leader Voting), Flow 3 (Lock Roster)',
+    purpose: 'Không gian làm việc chính để theo dõi số thành viên, bầu trưởng nhóm, trao đổi và bắt đầu khóa danh sách.',
+    flow: 'Điểm đến Luồng 1; trung tâm của Luồng 2 (Bầu trưởng nhóm) và Luồng 3 (Khóa danh sách)',
     actions: [
-      'Tap "Vote for Leader" banner button (if election open)',
-      'Tap "Proceed to Lock Team" (once 4+ members & leader elected)',
-      'Inspect real-time member count and role badges'
+      'Chọn nút "Bầu trưởng nhóm" nếu cuộc bầu cử đang mở',
+      'Chọn "Tiếp tục khóa nhóm" khi đã có ít nhất 4 thành viên và đã bầu trưởng nhóm',
+      'Xem số thành viên hiện tại và nhãn vai trò'
     ],
     displayedContent: [
-      'Team status header & progress bar (3/5 members)',
-      'Leadership alert banner with voting trigger',
-      'Member cards with Leader crown badge and contact pills',
-      'Persistent action buttons (Leave Group / Lock Roster)'
+      'Tiêu đề trạng thái nhóm và thanh tiến độ (3/5 thành viên)',
+      'Biểu ngữ nhắc bầu trưởng nhóm',
+      'Thẻ thành viên có nhãn trưởng nhóm và thông tin liên hệ',
+      'Các nút thao tác cố định (Rời nhóm / Khóa danh sách)'
     ],
-    decisions: 'Added prominent status pill and persistent alert banner to prevent ambiguity around who can lock the roster.'
+    decisions: 'Thêm nhãn trạng thái và biểu ngữ nhắc cố định để làm rõ ai có quyền khóa danh sách.'
   },
   'SCR_06': {
     code: 'SCR_06',
-    title: 'Leader Democratic Voting',
+    title: 'Bầu trưởng nhóm dân chủ',
     image: 'assets/figma/SCR_06_ Leader Voting.png',
-    purpose: 'Democratic, transparent election of the Team Leader who holds the sole authority to officially lock the team roster.',
-    flow: 'Flow 2: Team Leader Voting',
+    purpose: 'Bầu trưởng nhóm một cách dân chủ và minh bạch; trưởng nhóm là người duy nhất có quyền khóa danh sách.',
+    flow: 'Luồng 2: Bầu trưởng nhóm',
     actions: [
-      'Select preferred candidate card',
-      'Tap "Submit My Vote" button',
-      'Tap "Change Vote" outlined button if election window remains open'
+      'Chọn thẻ ứng viên mong muốn',
+      'Chọn nút "Gửi phiếu bầu"',
+      'Chọn nút viền "Đổi phiếu" nếu cuộc bầu cử vẫn đang mở'
     ],
     displayedContent: [
-      'Election explanation & governance guidelines',
-      'Selectable candidate cards (64dp height, 2dp orange border when selected)',
-      'Real-time vote tally pill ("2 votes received")',
-      'Primary CTA "Submit My Vote"'
+      'Giải thích về cuộc bầu cử và nguyên tắc biểu quyết',
+      'Thẻ ứng viên có thể chọn (cao 64dp, viền cam 2dp khi được chọn)',
+      'Nhãn số phiếu theo thời gian thực ("Đã nhận 2 phiếu")',
+      'Nút chính "Gửi phiếu bầu"'
     ],
-    decisions: 'Stitch Iteration 3 replaced small 18dp radio buttons with 64dp selectable cards for WCAG 2.5.5 touch target compliance.'
+    decisions: 'Vòng tinh chỉnh Stitch 3 thay nút radio 18dp bằng thẻ chọn cao 64dp để đáp ứng vùng chạm WCAG 2.5.5.'
   },
   'SCR_07': {
     code: 'SCR_07',
-    title: 'Lock Review & Error Recovery',
+    title: 'Kiểm tra khóa nhóm & khắc phục lỗi',
     image: 'assets/figma/SCR_07_ Group Lock Review & Error Recovery.png',
-    purpose: 'Final validation checklist before locking, with explicit error state and 1-tap recovery if team has under 4 members.',
-    flow: 'Flow 3: Group Roster Lock (Error & Recovery Path)',
+    purpose: 'Danh sách kiểm tra cuối trước khi khóa, có trạng thái lỗi rõ ràng và cách khắc phục nếu nhóm chưa đủ 4 người.',
+    flow: 'Luồng 3: Khóa danh sách nhóm (nhánh lỗi và khắc phục)',
     actions: [
-      'Review team compliance checklist',
-      'If <4 members: View error explanation & tap "Invite from Pool" recovery',
-      'If 4–5 members: Tap "Lock Team Roster" and confirm destructive modal'
+      'Kiểm tra danh sách thành viên có đáp ứng quy định không',
+      'Nếu dưới 4 người: Đọc giải thích lỗi và chọn "Mời từ danh sách chờ"',
+      'Nếu có 4–5 người: Chọn "Khóa danh sách nhóm" và xác nhận trong hộp thoại'
     ],
     displayedContent: [
-      'High-contrast Error Alert Banner (#BA1A1A on #FDF2F2, 6.2:1)',
-      'Disabled lock button (preventing illegal submission)',
-      'Inline Recovery Card: "Need 1 more member? Invite unassigned peers"',
-      'Destructive confirmation dialog with bold warning copy'
+      'Biểu ngữ cảnh báo lỗi có độ tương phản cao (#BA1A1A trên #FDF2F2, 6,2:1)',
+      'Vô hiệu hóa nút khóa (ngăn gửi danh sách không hợp lệ)',
+      'Thẻ khắc phục tại chỗ: "Cần thêm 1 thành viên? Mời sinh viên chưa có nhóm"',
+      'Hộp thoại xác nhận thao tác không thể hoàn tác cùng cảnh báo rõ ràng'
     ],
-    decisions: 'Stitch Iteration 2 prevented illegal 3-member roster lock by adding explicit error banner and pool recovery action (Heuristics #5 & #9).'
+    decisions: 'Vòng tinh chỉnh Stitch 2 ngăn khóa danh sách 3 người không hợp lệ bằng cảnh báo lỗi và thao tác mời người từ danh sách chờ (Nguyên tắc #5 và #9).'
   },
   'SCR_08': {
     code: 'SCR_08',
-    title: 'Random Pool Matching Status',
+    title: 'Trạng thái ghép nhóm tự động',
     image: 'assets/figma/SCR_08_ Random Pool Status.png',
-    purpose: 'Reassure unassigned students post-deadline that the automated registrar matching algorithm is actively pairing them.',
-    flow: 'Post-deadline fallback / Unassigned student edge case',
+    purpose: 'Thông báo cho sinh viên chưa có nhóm rằng hệ thống đang xử lý ghép nhóm tự động sau hạn đăng ký.',
+    flow: 'Tình huống dự phòng sau hạn / sinh viên chưa có nhóm',
     actions: [
-      'Inspect matching queue priority number',
-      'Verify registered skill preference tags',
-      'Access university registrar support hotline'
+      'Kiểm tra thứ tự ưu tiên trong hàng chờ ghép nhóm',
+      'Xem các nhãn kỹ năng ưu tiên đã đăng ký',
+      'Liên hệ bộ phận hỗ trợ đào tạo của trường'
     ],
     displayedContent: [
-      'Status badge: "Registration Closed — Algorithm Running"',
-      'Queue ID & estimated placement timestamp',
-      'Preference summary (Backend / Mobile / Web)',
-      'Academic department contact support information'
+      'Nhãn trạng thái: "Đã đóng đăng ký — Hệ thống đang ghép nhóm"',
+      'Mã hàng chờ và thời điểm dự kiến được xếp nhóm',
+      'Tóm tắt lựa chọn ưu tiên (Backend / Mobile / Web)',
+      'Thông tin liên hệ hỗ trợ của khoa'
     ],
-    decisions: 'Visibility of System Status (Heuristic #1) relieves anxiety for students who did not finalize a team before deadline.'
+    decisions: 'Hiển thị trạng thái hệ thống (Nguyên tắc #1) giúp sinh viên an tâm khi chưa hoàn tất nhóm trước hạn.'
   },
   'SCR_09': {
     code: 'SCR_09',
-    title: 'Notifications & Team Invites',
+    title: 'Thông báo & lời mời tham gia nhóm',
     image: 'assets/figma/SCR_09_ Notifications & Invites.png',
-    purpose: 'Transactional feed for team invites, leadership election results, and roster lock confirmations.',
-    flow: 'Cross-flow feedback & invitation resolution',
+    purpose: 'Danh sách thông báo về lời mời tham gia nhóm, kết quả bầu trưởng nhóm và xác nhận khóa danh sách.',
+    flow: 'Phản hồi và xử lý lời mời xuyên suốt các luồng',
     actions: [
-      'Filter notifications by "All", "Invites", "System"',
-      'Tap "Accept" or "Decline" on pending invitations',
-      'Tap to deep-link directly into Group Hub'
+      'Lọc thông báo theo "Tất cả", "Lời mời", "Hệ thống"',
+      'Chọn "Chấp nhận" hoặc "Từ chối" lời mời đang chờ',
+      'Chọn liên kết để mở trực tiếp mục Nhóm của tôi'
     ],
     displayedContent: [
-      'Filter tabs with count badges',
-      'Interactive invitation cards with Dual-Action buttons (Accept / Decline)',
-      'Timestamps and sender student avatars',
-      'Empty state illustration when all alerts cleared'
+      'Các thẻ lọc kèm số lượng thông báo',
+      'Thẻ lời mời có nút thao tác kép (Chấp nhận / Từ chối)',
+      'Thời gian và ảnh đại diện người gửi',
+      'Hình minh họa trạng thái trống khi đã xử lý hết thông báo'
     ],
-    decisions: 'Dual-action buttons with 48dp minimum height eliminate mistaps and speed up student team joining.'
+    decisions: 'Nút thao tác kép cao tối thiểu 48dp giúp hạn chế bấm nhầm và đẩy nhanh quá trình tham gia nhóm.'
   }
 };
 
@@ -367,14 +367,14 @@ function initCopyButtons() {
 
       navigator.clipboard.writeText(textToCopy).then(() => {
         const originalText = btn.innerHTML;
-        btn.innerHTML = `✓ Copied!`;
+        btn.innerHTML = `✓ Đã sao chép!`;
         btn.style.color = 'var(--color-success)';
         setTimeout(() => {
           btn.innerHTML = originalText;
           btn.style.color = '';
         }, 1800);
       }).catch(err => {
-        console.error('Copy failed', err);
+        console.error('Không sao chép được nội dung', err);
       });
     });
   });
