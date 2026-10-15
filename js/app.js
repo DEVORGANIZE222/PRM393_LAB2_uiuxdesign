@@ -237,6 +237,8 @@ function initScreenSelector() {
       phoneScreenImg.style.opacity = '0.3';
       setTimeout(() => {
         phoneScreenImg.src = data.image;
+        const scroller = document.getElementById('phoneScreenScroll');
+        if (scroller) scroller.scrollTop = 0;
         phoneScreenImg.alt = data.title;
         phoneScreenImg.style.opacity = '1';
       }, 150);
@@ -412,7 +414,7 @@ function initNavScrollHighlight() {
 
     sections.forEach(section => {
       const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 140;
       if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
         current = section.getAttribute('id');
       }
