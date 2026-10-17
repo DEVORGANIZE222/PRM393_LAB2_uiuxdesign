@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EXEMatching — Trang trưng bày thiết kế UI/UX có hỗ trợ AI | PRM393 Lab 2</title>
+  <title>EXEMatching - Trang trưng bày thiết kế UI/UX có hỗ trợ AI | PRM393 Lab 2</title>
   <meta name="description"
     content="Case study UI/UX trực quan và hệ thống thiết kế cho ứng dụng EXEMatching của Đại học FPT. Phát triển với Google Stitch, Antigravity AI và Figma.">
 
   <!-- Favicon matching EXEMatching graduation cap logo -->
-  <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23F27024'/><path d='M16 5L3 11.2L16 17.5L29 11.2L16 5Z' fill='white'/><path d='M7.5 14.4V19C7.5 21.6 11.3 23.8 16 23.8C20.7 23.8 24.5 21.6 24.5 19V14.4L16 18.5L7.5 14.4Z' fill='white'/><circle cx='9.5' cy='27.5' r='1.8' fill='white'/><circle cx='16' cy='27.5' r='1.8' fill='white'/><circle cx='22.5' cy='27.5' r='1.8' fill='white'/><path d='M11.3 27.5H14.2M17.8 27.5H20.7' stroke='white' stroke-width='1.5' stroke-linecap='round'/></svg>">
+  <link rel="icon" type="image/png" href="assets/Logo.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,20 +29,7 @@
     <div class="container nav-container">
       <a href="#overview" class="brand-wrapper">
         <div class="brand-logo-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Mortarboard Cap Top -->
-            <path d="M12 3L2 7.8L12 12.6L22 7.8L12 3Z" fill="white" />
-            <!-- Mortarboard Skullcap -->
-            <path d="M5.5 10.2V13.8C5.5 15.8 8.4 17.5 12 17.5C15.6 17.5 18.5 15.8 18.5 13.8V10.2L12 13.3L5.5 10.2Z"
-              fill="white" />
-            <!-- Tassel -->
-            <path d="M22 7.8V14.5C22 15 21.6 15.4 21.1 15.4C20.6 15.4 20.2 15 20.2 14.5V8.7L22 7.8Z" fill="white" />
-            <!-- Team Network Matching Nodes -->
-            <circle cx="7" cy="20.5" r="1.3" fill="white" />
-            <circle cx="12" cy="20.5" r="1.3" fill="white" />
-            <circle cx="17" cy="20.5" r="1.3" fill="white" />
-            <path d="M8.3 20.5H10.7M13.3 20.5H15.7" stroke="white" stroke-width="1.2" stroke-linecap="round" />
-          </svg>
+          <img src="assets/Logo.png" alt="EXEMatching Logo" class="brand-logo-img">
         </div>
         <div class="brand-title-group">
           <div class="brand-name">EXE<span>Matching</span></div>
@@ -52,7 +38,8 @@
       </a>
 
       <div class="header-actions">
-        <button id="themeToggleBtn" class="theme-toggle-btn" title="Đổi giao diện sáng/tối" aria-label="Đổi giao diện sáng/tối">
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Đổi giao diện sáng/tối"
+          aria-label="Đổi giao diện sáng/tối">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -112,13 +99,14 @@
 
       <h1 class="hero-title">
         Thiết kế UI/UX có hỗ trợ AI: <br>
-        Ứng dụng di động <span class="highlight">EXEMatching</span>
+        Ứng dụng di động EXE<span class="highlight">Matching</span>
       </h1>
 
       <p class="hero-subtitle">
-        Nghiên cứu tình huống thiết kế trực quan từ đầu đến cuối, trình bày nghiên cứu người dùng, thiết kế với Google Stitch AI,
+        Nghiên cứu tình huống thiết kế trực quan từ đầu đến cuối, trình bày nghiên cứu người dùng, thiết kế với Google
+        Stitch AI,
         đánh giá theo bộ nguyên tắc Nielsen, token thiết kế và tài liệu bàn giao Flutter gồm 9 màn hình cho ứng dụng
-        ghép nhóm đồ án tốt nghiệp EXEMatching của Đại học FPT.
+        ghép nhóm dự án khởi nghiệp EXEMatching của Đại học FPT.
       </p>
 
       <div class="hero-stats-grid">
@@ -153,7 +141,8 @@
         <span class="section-tag">01. Nghiên cứu & khám phá người dùng</span>
         <h2 class="section-title">Chân dung người dùng mục tiêu & vấn đề cần giải quyết</h2>
         <p class="section-subtitle">
-          Chân dung giả định đang được xây dựng cho tác vụ lập nhóm đồ án. Các giả định được đánh dấu và cần được kiểm chứng
+          Chân dung giả định đang được xây dựng cho tác vụ lập nhóm đồ án. Các giả định được đánh dấu và cần được kiểm
+          chứng
           với sinh viên trước khi xem là kết quả nghiên cứu.
         </p>
       </div>
@@ -162,28 +151,33 @@
         <!-- Persona Profile Card -->
         <div class="persona-profile-card">
           <div class="persona-image-wrapper">
-            <img src="assets/persona_minh.jpg" alt="Ảnh minh họa cho chân dung giả định Minh" class="persona-image zoomable-img">
+            <img src="assets/persona_minh.jpg" alt="Ảnh minh họa cho chân dung giả định Minh"
+              class="persona-image zoomable-img">
             <div class="persona-badge-float">Chính · Chân dung giả định</div>
           </div>
           <div class="persona-info-body">
             <h3 class="persona-name">Nguyen Van Minh</h3>
-            <div class="persona-role">20 tuổi • Sinh viên năm cuối ngành Kỹ thuật Phần mềm, Đại học FPT · Hồ sơ minh họa, chưa xác thực</div>
+            <div class="persona-role">20 tuổi • Sinh viên năm cuối ngành Kỹ thuật Phần mềm, Đại học FPT · Hồ sơ minh
+              họa, chưa xác thực</div>
 
             <div class="persona-meta-list">
               <div class="persona-meta-item">
                 <span class="persona-meta-label">Bối cảnh giả định · Chưa khảo sát</span>
-                <span class="persona-meta-val">Lịch học, công việc bán thời gian và cách nhận thông báo trong hồ sơ là chi tiết minh họa;
+                <span class="persona-meta-val">Lịch học, công việc bán thời gian và cách nhận thông báo trong hồ sơ là
+                  chi tiết minh họa;
                   chưa có nguồn nghiên cứu xác nhận.</span>
               </div>
               <div class="persona-meta-item">
                 <span class="persona-meta-label">Thiết bị giả định · Chưa khảo sát</span>
-                <span class="persona-meta-val">Điện thoại Android và thao tác một tay là giả thuyết thiết kế; model, kích thước màn hình
+                <span class="persona-meta-val">Điện thoại Android và thao tác một tay là giả thuyết thiết kế; model,
+                  kích thước màn hình
                   và bối cảnh sử dụng thực tế cần được hỏi người dùng.</span>
               </div>
               <div class="persona-meta-item">
                 <span class="persona-meta-label">Nhu cầu trợ năng</span>
                 <span class="persona-meta-val">Giả định minh họa: có thể khó đọc chữ tương phản thấp dưới ánh nắng;
-                  cần kiểm chứng nhu cầu trợ năng thực tế. Mốc vùng chạm 48×48 dp là mục tiêu thiết kế, không phải đặc điểm đã xác nhận.</span>
+                  cần kiểm chứng nhu cầu trợ năng thực tế. Mốc vùng chạm 48×48 dp là mục tiêu thiết kế, không phải đặc
+                  điểm đã xác nhận.</span>
               </div>
             </div>
             <details class="persona-field-details">
@@ -191,18 +185,66 @@
               <div class="persona-table-wrap">
                 <table class="persona-evidence-table">
                   <tbody>
-                    <tr><th>01 · Danh tính & kiểu hành vi</th><td>Nguyen Van Minh — sinh viên Capstone ít thời gian, đang tìm nhóm phù hợp. Tên/hồ sơ minh họa.</td></tr>
-                    <tr><th>02 · Mức ưu tiên</th><td>Primary cho tác vụ khám phá và hình thành nhóm; P02/P03 là ứng viên phụ chưa được xác nhận khác biệt bằng nghiên cứu.</td></tr>
-                    <tr><th>03 · Bối cảnh sử dụng</th><td>Giả định: tuần đăng ký, xem lựa chọn trên điện thoại giữa hoạt động/di chuyển, chú ý hạn chế. Thiết bị và bối cảnh cụ thể chưa xác minh.</td></tr>
-                    <tr><th>04 · Mục tiêu</th><td>Tìm nhóm còn chỗ cần kỹ năng phù hợp; đánh giá thành viên trước khi xin vào; biết trạng thái yêu cầu và roster.</td></tr>
-                    <tr><th>05 · Công việc cần hoàn thành</th><td>“Khi gần hạn đăng ký, tôi muốn tìm và đánh giá nhóm còn chỗ phù hợp kỹ năng để tham gia nhóm hợp lệ mà không dựa vào tin nhắn cũ.”</td></tr>
-                    <tr><th>06 · Hành vi hiện tại</th><td>Giả định cần kiểm chứng: tìm trong chat/bảng tính, xem kỹ năng/chỗ, hỏi trưởng nhóm và chờ phản hồi. Kênh/tần suất/workaround thực tế chưa biết.</td></tr>
-                    <tr><th>07 · Trở ngại</th><td>Giả định: dữ liệu tuyển người cũ; khó so sánh kỹ năng; trạng thái leader/roster/lời mời không rõ có thể làm chậm hoặc bỏ lỡ hạn.</td></tr>
-                    <tr><th>08 · Động lực</th><td>Giả định: lập nhóm đúng hạn, tin tưởng vào độ phù hợp, rõ trách nhiệm và chắc roster đáp ứng quy định.</td></tr>
-                    <tr><th>09 · Ràng buộc</th><td>Giả định: ít thời gian, dùng điện thoại và có thể bị gián đoạn; nhu cầu trợ năng, thiết bị, kết nối và kỹ năng số chưa được khảo sát.</td></tr>
-                    <tr><th>10 · Tình huống</th><td>Thấy bài tuyển thành viên nhưng chưa rõ còn chỗ/kỹ năng cần; lọc nhóm, xem roster/kỹ năng, gửi yêu cầu và cần biết kết quả/bước kế. Kịch bản minh họa.</td></tr>
-                    <tr><th>11 · Tiêu chí thành công</th><td>Target đề xuất: 4/5 tìm và gửi yêu cầu trong 60 giây; 4/5 hiểu roster 3 người chưa thể khóa; leader tới bước xác nhận trong 15 giây. Chưa kiểm thử.</td></tr>
-                    <tr><th>12 · Bằng chứng & trạng thái</th><td>Proto-persona chưa xác thực; repository hiện không có interview/observation ID, ngày hay kết quả khảo sát. Chi tiết đều là giả định, không phải finding.</td></tr>
+                    <tr>
+                      <th>01 · Danh tính & kiểu hành vi</th>
+                      <td>Nguyen Van Minh — sinh viên Capstone ít thời gian, đang tìm nhóm phù hợp. Tên/hồ sơ minh họa.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>02 · Mức ưu tiên</th>
+                      <td>Primary cho tác vụ khám phá và hình thành nhóm; P02/P03 là ứng viên phụ chưa được xác nhận
+                        khác biệt bằng nghiên cứu.</td>
+                    </tr>
+                    <tr>
+                      <th>03 · Bối cảnh sử dụng</th>
+                      <td>Giả định: tuần đăng ký, xem lựa chọn trên điện thoại giữa hoạt động/di chuyển, chú ý hạn chế.
+                        Thiết bị và bối cảnh cụ thể chưa xác minh.</td>
+                    </tr>
+                    <tr>
+                      <th>04 · Mục tiêu</th>
+                      <td>Tìm nhóm còn chỗ cần kỹ năng phù hợp; đánh giá thành viên trước khi xin vào; biết trạng thái
+                        yêu cầu và roster.</td>
+                    </tr>
+                    <tr>
+                      <th>05 · Công việc cần hoàn thành</th>
+                      <td>“Khi gần hạn đăng ký, tôi muốn tìm và đánh giá nhóm còn chỗ phù hợp kỹ năng để tham gia nhóm
+                        hợp lệ mà không dựa vào tin nhắn cũ.”</td>
+                    </tr>
+                    <tr>
+                      <th>06 · Hành vi hiện tại</th>
+                      <td>Giả định cần kiểm chứng: tìm trong chat/bảng tính, xem kỹ năng/chỗ, hỏi trưởng nhóm và chờ
+                        phản hồi. Kênh/tần suất/workaround thực tế chưa biết.</td>
+                    </tr>
+                    <tr>
+                      <th>07 · Trở ngại</th>
+                      <td>Giả định: dữ liệu tuyển người cũ; khó so sánh kỹ năng; trạng thái leader/roster/lời mời không
+                        rõ có thể làm chậm hoặc bỏ lỡ hạn.</td>
+                    </tr>
+                    <tr>
+                      <th>08 · Động lực</th>
+                      <td>Giả định: lập nhóm đúng hạn, tin tưởng vào độ phù hợp, rõ trách nhiệm và chắc roster đáp ứng
+                        quy định.</td>
+                    </tr>
+                    <tr>
+                      <th>09 · Ràng buộc</th>
+                      <td>Giả định: ít thời gian, dùng điện thoại và có thể bị gián đoạn; nhu cầu trợ năng, thiết bị,
+                        kết nối và kỹ năng số chưa được khảo sát.</td>
+                    </tr>
+                    <tr>
+                      <th>10 · Tình huống</th>
+                      <td>Thấy bài tuyển thành viên nhưng chưa rõ còn chỗ/kỹ năng cần; lọc nhóm, xem roster/kỹ năng, gửi
+                        yêu cầu và cần biết kết quả/bước kế. Kịch bản minh họa.</td>
+                    </tr>
+                    <tr>
+                      <th>11 · Tiêu chí thành công</th>
+                      <td>Target đề xuất: 4/5 tìm và gửi yêu cầu trong 60 giây; 4/5 hiểu roster 3 người chưa thể khóa;
+                        leader tới bước xác nhận trong 15 giây. Chưa kiểm thử.</td>
+                    </tr>
+                    <tr>
+                      <th>12 · Bằng chứng & trạng thái</th>
+                      <td>Proto-persona chưa xác thực; repository hiện không có interview/observation ID, ngày hay kết
+                        quả khảo sát. Chi tiết đều là giả định, không phải finding.</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -225,7 +267,8 @@
             </h4>
             <div class="goals-pain-grid">
               <div>
-                <strong style="color: var(--color-success); display: block; margin-bottom: 8px;">Mục tiêu đề xuất · Cần xác minh</strong>
+                <strong style="color: var(--color-success); display: block; margin-bottom: 8px;">Mục tiêu đề xuất · Cần
+                  xác minh</strong>
                 <ul class="list-check">
                   <li>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -252,7 +295,8 @@
               </div>
 
               <div>
-                <strong style="color: var(--color-error); display: block; margin-bottom: 8px;">Trở ngại giả định · Cần xác minh</strong>
+                <strong style="color: var(--color-error); display: block; margin-bottom: 8px;">Trở ngại giả định · Cần
+                  xác minh</strong>
                 <ul class="list-cross">
                   <li>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -303,8 +347,10 @@
               </div>
             </div>
 
-            <div class="highlight-box" style="border-left-color: var(--color-success); background-color: var(--color-success-bg);">
-              <div class="highlight-box-title" style="color: var(--color-success);">Tiêu chí thành công đề xuất · Chưa kiểm thử</div>
+            <div class="highlight-box"
+              style="border-left-color: var(--color-success); background-color: var(--color-success-bg);">
+              <div class="highlight-box-title" style="color: var(--color-success);">Tiêu chí thành công đề xuất · Chưa
+                kiểm thử</div>
               <div class="highlight-box-text">
                 Trong kiểm thử khả năng sử dụng, ít nhất 4/5 sinh viên tìm thấy nhóm còn chỗ phù hợp và gửi yêu cầu
                 trong 60 giây mà không cần trợ giúp; ít nhất 4/5 nhận biết danh sách 3 người chưa thể khóa và nêu được
@@ -335,19 +381,23 @@
         <div class="persona-assumptions-grid">
           <div class="persona-assumption-item">
             <h4>Mẫu hành vi & ưu tiên</h4>
-            <p>Sinh viên đồ án ít thời gian, đang tìm nhóm phù hợp. P01 là persona chính cho hành trình khám phá và gửi yêu cầu tham gia trong nguyên mẫu.</p>
+            <p>Sinh viên đồ án ít thời gian, đang tìm nhóm phù hợp. P01 là persona chính cho hành trình khám phá và gửi
+              yêu cầu tham gia trong nguyên mẫu.</p>
           </div>
           <div class="persona-assumption-item">
             <h4>Hành vi hiện tại · Giả định</h4>
-            <p>Có thể tìm trong nhóm trò chuyện hoặc bảng tính, kiểm tra chỗ/kỹ năng, nhắn trưởng nhóm rồi chờ phản hồi. Kênh thực tế, tần suất và cách xử lý thay thế cần xác minh.</p>
+            <p>Có thể tìm trong nhóm trò chuyện hoặc bảng tính, kiểm tra chỗ/kỹ năng, nhắn trưởng nhóm rồi chờ phản hồi.
+              Kênh thực tế, tần suất và cách xử lý thay thế cần xác minh.</p>
           </div>
           <div class="persona-assumption-item">
             <h4>Động lực · Giả định</h4>
-            <p>Lập nhóm đúng hạn, tin tưởng vào độ phù hợp kỹ năng, rõ trách nhiệm ra quyết định và chắc chắn danh sách đáp ứng quy định.</p>
+            <p>Lập nhóm đúng hạn, tin tưởng vào độ phù hợp kỹ năng, rõ trách nhiệm ra quyết định và chắc chắn danh sách
+              đáp ứng quy định.</p>
           </div>
           <div class="persona-assumption-item">
             <h4>Trạng thái bằng chứng</h4>
-            <p>Chưa có phỏng vấn, quan sát, khảo sát hay kiểm thử được ghi nhận. Hồ sơ là giả định từ đề bài, không phải phát hiện hoặc lời trích dẫn của người tham gia.</p>
+            <p>Chưa có phỏng vấn, quan sát, khảo sát hay kiểm thử được ghi nhận. Hồ sơ là giả định từ đề bài, không phải
+              phát hiện hoặc lời trích dẫn của người tham gia.</p>
           </div>
         </div>
         <div class="persona-hypotheses">
@@ -355,21 +405,26 @@
           <div class="persona-hypothesis-grid">
             <article class="persona-hypothesis-card">
               <strong>Tình trạng chỗ</strong>
-              <p>Số chỗ còn trống và bộ lọc có thể giúp chọn nhóm còn tuyển. Thử với nhóm đã đầy và còn chỗ; ghi độ chính xác và thời gian.</p>
+              <p>Số chỗ còn trống và bộ lọc có thể giúp chọn nhóm còn tuyển. Thử với nhóm đã đầy và còn chỗ; ghi độ
+                chính xác và thời gian.</p>
             </article>
             <article class="persona-hypothesis-card">
               <strong>Phù hợp kỹ năng</strong>
-              <p>Kỹ năng thành viên và vị trí còn thiếu có thể giúp đánh giá độ phù hợp. Yêu cầu chọn nhóm cho hồ sơ kỹ năng cụ thể và giải thích lựa chọn.</p>
+              <p>Kỹ năng thành viên và vị trí còn thiếu có thể giúp đánh giá độ phù hợp. Yêu cầu chọn nhóm cho hồ sơ kỹ
+                năng cụ thể và giải thích lựa chọn.</p>
             </article>
             <article class="persona-hypothesis-card">
               <strong>An toàn danh sách</strong>
-              <p>Thông báo điều kiện và hành động khắc phục có thể tránh khóa roster sai. Yêu cầu xem nhóm 3 người và nêu bước tiếp theo.</p>
+              <p>Thông báo điều kiện và hành động khắc phục có thể tránh khóa roster sai. Yêu cầu xem nhóm 3 người và
+                nêu bước tiếp theo.</p>
             </article>
           </div>
         </div>
         <div class="persona-research-next">
           <strong>Bước nghiên cứu tiếp theo:</strong>
-          Phỏng vấn/quan sát sinh viên có trải nghiệm tìm nhóm, điều phối roster và chờ ghép; hỏi về lần gần nhất, từng bước, công cụ, cách xác nhận chỗ và tình huống thông tin đã cũ. Ghi ID ẩn danh, phân biệt reported, observed, inferred và assumed.
+          Phỏng vấn/quan sát sinh viên có trải nghiệm tìm nhóm, điều phối roster và chờ ghép; hỏi về lần gần nhất, từng
+          bước, công cụ, cách xác nhận chỗ và tình huống thông tin đã cũ. Ghi ID ẩn danh, phân biệt reported, observed,
+          inferred và assumed.
         </div>
       </div>
 
@@ -392,19 +447,23 @@
             <dl class="persona-secondary-details">
               <div>
                 <dt>Bối cảnh & mục tiêu</dt>
-                <dd>Đang điều phối nhóm 3–4 người; cần theo dõi thành viên, phiếu bầu và lời mời để hoàn tất danh sách đúng quy định.</dd>
+                <dd>Đang điều phối nhóm 3–4 người; cần theo dõi thành viên, phiếu bầu và lời mời để hoàn tất danh sách
+                  đúng quy định.</dd>
               </div>
               <div>
                 <dt>Công việc cần hoàn thành</dt>
-                <dd>“Khi nhóm gần đủ người, tôi muốn biết điều kiện nào còn thiếu và bước nào cần làm tiếp, để khóa đúng danh sách mà không bỏ sót thành viên.”</dd>
+                <dd>“Khi nhóm gần đủ người, tôi muốn biết điều kiện nào còn thiếu và bước nào cần làm tiếp, để khóa đúng
+                  danh sách mà không bỏ sót thành viên.”</dd>
               </div>
               <div>
                 <dt>Trở ngại & động lực · Giả định</dt>
-                <dd>Trạng thái lời mời hoặc số lượng thành viên có thể khó theo dõi; muốn tránh khóa nhầm hay trễ hạn và cần thấy rõ cách khắc phục khi nhóm chưa đủ 4 người.</dd>
+                <dd>Trạng thái lời mời hoặc số lượng thành viên có thể khó theo dõi; muốn tránh khóa nhầm hay trễ hạn và
+                  cần thấy rõ cách khắc phục khi nhóm chưa đủ 4 người.</dd>
               </div>
               <div>
                 <dt>Tình huống & cách kiểm chứng</dt>
-                <dd>Với nhóm 3/5 người, kiểm tra xem Phúc có nhận ra chưa thể khóa và tìm được hành động tuyển thêm; ghi nhận lỗi, thời gian và mức trợ giúp.</dd>
+                <dd>Với nhóm 3/5 người, kiểm tra xem Phúc có nhận ra chưa thể khóa và tìm được hành động tuyển thêm; ghi
+                  nhận lỗi, thời gian và mức trợ giúp.</dd>
               </div>
             </dl>
             <details class="persona-field-details">
@@ -412,18 +471,66 @@
               <div class="persona-table-wrap">
                 <table class="persona-evidence-table">
                   <tbody>
-                    <tr><th>01 · Danh tính & kiểu hành vi</th><td>Lê Hoàng Phúc — người điều phối nhóm được bầu, cần hoàn thiện danh sách hợp lệ. Tên và hồ sơ minh họa.</td></tr>
-                    <tr><th>02 · Mức ưu tiên</th><td>Ứng viên phụ chưa xác thực; đại diện tác vụ điều phối/khóa trong SCR_05–07. Cần xác minh có khác P01 về hành vi và quyết định thiết kế không.</td></tr>
-                    <tr><th>03 · Bối cảnh sử dụng</th><td>Giả định: kiểm tra nhóm trên điện thoại giữa các buổi học, đồng thời phối hợp với thành viên. Thiết bị, tần suất và mức độ gián đoạn thực tế chưa rõ.</td></tr>
-                    <tr><th>04 · Mục tiêu</th><td>Biết roster đủ 4–5 người; nhận ra phiếu bầu/lời mời còn thiếu; khóa danh sách hoặc tìm hướng khắc phục trước hạn.</td></tr>
-                    <tr><th>05 · Công việc cần hoàn thành</th><td>“Khi nhóm gần hoàn tất, tôi muốn biết điều kiện còn thiếu và bước tiếp theo để khóa đúng danh sách mà không bỏ sót ai.”</td></tr>
-                    <tr><th>06 · Hành vi hiện tại</th><td>Giả định cần kiểm chứng: xem tin nhắn, hỏi thành viên về phiếu bầu/chỗ trống, có thể theo dõi bằng danh sách chung. Công cụ, trình tự, tần suất chưa biết.</td></tr>
-                    <tr><th>07 · Trở ngại</th><td>Giả định: lời mời đang chờ dễ bị nhầm là thành viên chính thức; nhóm thiếu người có thể không hiểu vì sao chưa khóa; trạng thái bầu chưa rõ có thể làm chậm quyết định.</td></tr>
-                    <tr><th>08 · Động lực</th><td>Giả định: coi trọng trách nhiệm rõ ràng, roster chính xác, biết việc còn tồn và tự tin rằng thao tác khóa đúng quyền.</td></tr>
-                    <tr><th>09 · Ràng buộc</th><td>Có thể chịu áp lực gần hạn và dùng điện thoại; quyền hạn, kết nối, thiết bị, kỹ năng số và nhu cầu trợ năng đều chưa biết.</td></tr>
-                    <tr><th>10 · Tình huống</th><td>Được hỏi nhóm đã sẵn sàng chưa; Phúc rà roster 3/5 người, tìm nguyên nhân chưa thể khóa và bắt đầu tuyển thêm. Kịch bản minh họa, chưa quan sát.</td></tr>
-                    <tr><th>11 · Tiêu chí thành công</th><td>Target đề xuất: ít nhất 4/5 người nhận ra nhóm 3 người chưa thể khóa, giải thích lý do và tìm hành động tuyển thêm trong 30 giây, không trợ giúp. Chưa kiểm thử.</td></tr>
-                    <tr><th>12 · Bằng chứng & trạng thái</th><td>Proto-persona ứng viên, chưa xác thực; chưa có ID/ngày phỏng vấn hoặc quan sát. Xem backlog R02 trong <a href="ux/persona-research.md">hồ sơ nghiên cứu</a>.</td></tr>
+                    <tr>
+                      <th>01 · Danh tính & kiểu hành vi</th>
+                      <td>Lê Hoàng Phúc — người điều phối nhóm được bầu, cần hoàn thiện danh sách hợp lệ. Tên và hồ sơ
+                        minh họa.</td>
+                    </tr>
+                    <tr>
+                      <th>02 · Mức ưu tiên</th>
+                      <td>Ứng viên phụ chưa xác thực; đại diện tác vụ điều phối/khóa trong SCR_05–07. Cần xác minh có
+                        khác P01 về hành vi và quyết định thiết kế không.</td>
+                    </tr>
+                    <tr>
+                      <th>03 · Bối cảnh sử dụng</th>
+                      <td>Giả định: kiểm tra nhóm trên điện thoại giữa các buổi học, đồng thời phối hợp với thành viên.
+                        Thiết bị, tần suất và mức độ gián đoạn thực tế chưa rõ.</td>
+                    </tr>
+                    <tr>
+                      <th>04 · Mục tiêu</th>
+                      <td>Biết roster đủ 4–5 người; nhận ra phiếu bầu/lời mời còn thiếu; khóa danh sách hoặc tìm hướng
+                        khắc phục trước hạn.</td>
+                    </tr>
+                    <tr>
+                      <th>05 · Công việc cần hoàn thành</th>
+                      <td>“Khi nhóm gần hoàn tất, tôi muốn biết điều kiện còn thiếu và bước tiếp theo để khóa đúng danh
+                        sách mà không bỏ sót ai.”</td>
+                    </tr>
+                    <tr>
+                      <th>06 · Hành vi hiện tại</th>
+                      <td>Giả định cần kiểm chứng: xem tin nhắn, hỏi thành viên về phiếu bầu/chỗ trống, có thể theo dõi
+                        bằng danh sách chung. Công cụ, trình tự, tần suất chưa biết.</td>
+                    </tr>
+                    <tr>
+                      <th>07 · Trở ngại</th>
+                      <td>Giả định: lời mời đang chờ dễ bị nhầm là thành viên chính thức; nhóm thiếu người có thể không
+                        hiểu vì sao chưa khóa; trạng thái bầu chưa rõ có thể làm chậm quyết định.</td>
+                    </tr>
+                    <tr>
+                      <th>08 · Động lực</th>
+                      <td>Giả định: coi trọng trách nhiệm rõ ràng, roster chính xác, biết việc còn tồn và tự tin rằng
+                        thao tác khóa đúng quyền.</td>
+                    </tr>
+                    <tr>
+                      <th>09 · Ràng buộc</th>
+                      <td>Có thể chịu áp lực gần hạn và dùng điện thoại; quyền hạn, kết nối, thiết bị, kỹ năng số và nhu
+                        cầu trợ năng đều chưa biết.</td>
+                    </tr>
+                    <tr>
+                      <th>10 · Tình huống</th>
+                      <td>Được hỏi nhóm đã sẵn sàng chưa; Phúc rà roster 3/5 người, tìm nguyên nhân chưa thể khóa và bắt
+                        đầu tuyển thêm. Kịch bản minh họa, chưa quan sát.</td>
+                    </tr>
+                    <tr>
+                      <th>11 · Tiêu chí thành công</th>
+                      <td>Target đề xuất: ít nhất 4/5 người nhận ra nhóm 3 người chưa thể khóa, giải thích lý do và tìm
+                        hành động tuyển thêm trong 30 giây, không trợ giúp. Chưa kiểm thử.</td>
+                    </tr>
+                    <tr>
+                      <th>12 · Bằng chứng & trạng thái</th>
+                      <td>Proto-persona ứng viên, chưa xác thực; chưa có ID/ngày phỏng vấn hoặc quan sát. Xem backlog
+                        R02 trong <a href="ux/persona-research.md">hồ sơ nghiên cứu</a>.</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -436,23 +543,28 @@
               <span class="persona-secondary-status">Chưa kiểm chứng</span>
             </div>
             <h4>Trần Gia Huy</h4>
-            <p class="persona-secondary-role">Sinh viên năm cuối · Chưa được ghép nhóm khi hết hạn tìm nhóm (giả định)</p>
+            <p class="persona-secondary-role">Sinh viên năm cuối · Chưa được ghép nhóm khi hết hạn tìm nhóm (giả định)
+            </p>
             <dl class="persona-secondary-details">
               <div>
                 <dt>Bối cảnh & mục tiêu</dt>
-                <dd>Chưa có nhóm khi thời hạn đăng ký qua đi; cần hiểu trạng thái trong danh sách ghép ngẫu nhiên và biết mình có thể làm gì tiếp theo.</dd>
+                <dd>Chưa có nhóm khi thời hạn đăng ký qua đi; cần hiểu trạng thái trong danh sách ghép ngẫu nhiên và
+                  biết mình có thể làm gì tiếp theo.</dd>
               </div>
               <div>
                 <dt>Công việc cần hoàn thành</dt>
-                <dd>“Khi chưa được ghép nhóm, tôi muốn xem trạng thái và bước tiếp theo một cách dễ hiểu, để biết mình không bị bỏ sót và chủ động chuẩn bị.”</dd>
+                <dd>“Khi chưa được ghép nhóm, tôi muốn xem trạng thái và bước tiếp theo một cách dễ hiểu, để biết mình
+                  không bị bỏ sót và chủ động chuẩn bị.”</dd>
               </div>
               <div>
                 <dt>Trở ngại & động lực · Giả định</dt>
-                <dd>Không rõ trạng thái ghép hoặc thiếu hướng dẫn có thể gây lo lắng; muốn nhận thông tin nhất quán và biết khi nào cần kiểm tra lại.</dd>
+                <dd>Không rõ trạng thái ghép hoặc thiếu hướng dẫn có thể gây lo lắng; muốn nhận thông tin nhất quán và
+                  biết khi nào cần kiểm tra lại.</dd>
               </div>
               <div>
                 <dt>Tình huống & cách kiểm chứng</dt>
-                <dd>Mở màn hình danh sách ghép ngẫu nhiên; kiểm tra xem Huy có diễn giải đúng trạng thái và nêu được bước tiếp theo mà không cần trợ giúp hay không.</dd>
+                <dd>Mở màn hình danh sách ghép ngẫu nhiên; kiểm tra xem Huy có diễn giải đúng trạng thái và nêu được
+                  bước tiếp theo mà không cần trợ giúp hay không.</dd>
               </div>
             </dl>
             <details class="persona-field-details">
@@ -460,18 +572,66 @@
               <div class="persona-table-wrap">
                 <table class="persona-evidence-table">
                   <tbody>
-                    <tr><th>01 · Danh tính & kiểu hành vi</th><td>Trần Gia Huy — sinh viên chưa được ghép, cần trạng thái và bước tiếp theo rõ ràng. Tên và hồ sơ minh họa.</td></tr>
-                    <tr><th>02 · Mức ưu tiên</th><td>Ứng viên phụ chưa xác thực; đại diện SCR_08. Cần xác minh đây là nhu cầu thực hay chỉ là trạng thái hệ thống.</td></tr>
-                    <tr><th>03 · Bối cảnh sử dụng</th><td>Giả định: sau hạn lập nhóm, Huy xem trạng thái trên điện thoại và có thể hỏi bạn học/đơn vị phụ trách. Thiết bị, kết nối, thời điểm chưa rõ.</td></tr>
-                    <tr><th>04 · Mục tiêu</th><td>Biết đang chờ/đã ghép/cần hành động; hiểu bước kế tiếp và khi nào cần kiểm tra lại; tránh bị bỏ sót hoặc dựa vào trạng thái cũ.</td></tr>
-                    <tr><th>05 · Công việc cần hoàn thành</th><td>“Khi chưa được ghép, tôi muốn xem trạng thái và bước tiếp theo để biết hồ sơ không bị bỏ sót và chủ động chuẩn bị.”</td></tr>
-                    <tr><th>06 · Hành vi hiện tại</th><td>Giả định cần kiểm chứng: xem tin nhắn lớp/nhóm hoặc hỏi bạn học, nhân sự học vụ. Kênh, tần suất và cách làm thay thế chưa biết.</td></tr>
-                    <tr><th>07 · Trở ngại</th><td>Giả định: trạng thái chờ không rõ có thể khiến kiểm tra lặp lại; thiếu hướng dẫn có thể dẫn đến hỏi hỗ trợ không cần thiết; trạng thái cũ tạo kỳ vọng sai.</td></tr>
-                    <tr><th>08 · Động lực</th><td>Giả định: coi trọng sự công bằng, cập nhật nhất quán, minh bạch điều đã biết và hành động rõ ràng khi cần làm gì đó.</td></tr>
-                    <tr><th>09 · Ràng buộc</th><td>Có thể gặp bất an do hạn đăng ký; dùng điện thoại chỉ là giả thuyết. Kết nối, kỹ năng số, khả năng tiếp cận và kênh liên hệ chưa rõ.</td></tr>
-                    <tr><th>10 · Tình huống</th><td>Đợt lập nhóm thường lệ kết thúc khi Huy chưa có nhóm; Huy mở trạng thái ghép và tìm bước tiếp theo. Không hứa thời gian ghép nếu chưa có cam kết dịch vụ.</td></tr>
-                    <tr><th>11 · Tiêu chí thành công</th><td>Target đề xuất: ít nhất 4/5 người nói đúng trạng thái và bước tiếp theo sau khi xem SCR_08, không trợ giúp; ghi nhận hiểu sai và kỳ vọng ETA. Chưa kiểm thử.</td></tr>
-                    <tr><th>12 · Bằng chứng & trạng thái</th><td>Proto-persona ứng viên, chưa xác thực; chưa có ID/ngày phỏng vấn hoặc quan sát. Sự tồn tại của nhu cầu là câu hỏi mở R03 trong <a href="ux/persona-research.md">hồ sơ nghiên cứu</a>.</td></tr>
+                    <tr>
+                      <th>01 · Danh tính & kiểu hành vi</th>
+                      <td>Trần Gia Huy — sinh viên chưa được ghép, cần trạng thái và bước tiếp theo rõ ràng. Tên và hồ
+                        sơ minh họa.</td>
+                    </tr>
+                    <tr>
+                      <th>02 · Mức ưu tiên</th>
+                      <td>Ứng viên phụ chưa xác thực; đại diện SCR_08. Cần xác minh đây là nhu cầu thực hay chỉ là trạng
+                        thái hệ thống.</td>
+                    </tr>
+                    <tr>
+                      <th>03 · Bối cảnh sử dụng</th>
+                      <td>Giả định: sau hạn lập nhóm, Huy xem trạng thái trên điện thoại và có thể hỏi bạn học/đơn vị
+                        phụ trách. Thiết bị, kết nối, thời điểm chưa rõ.</td>
+                    </tr>
+                    <tr>
+                      <th>04 · Mục tiêu</th>
+                      <td>Biết đang chờ/đã ghép/cần hành động; hiểu bước kế tiếp và khi nào cần kiểm tra lại; tránh bị
+                        bỏ sót hoặc dựa vào trạng thái cũ.</td>
+                    </tr>
+                    <tr>
+                      <th>05 · Công việc cần hoàn thành</th>
+                      <td>“Khi chưa được ghép, tôi muốn xem trạng thái và bước tiếp theo để biết hồ sơ không bị bỏ sót
+                        và chủ động chuẩn bị.”</td>
+                    </tr>
+                    <tr>
+                      <th>06 · Hành vi hiện tại</th>
+                      <td>Giả định cần kiểm chứng: xem tin nhắn lớp/nhóm hoặc hỏi bạn học, nhân sự học vụ. Kênh, tần
+                        suất và cách làm thay thế chưa biết.</td>
+                    </tr>
+                    <tr>
+                      <th>07 · Trở ngại</th>
+                      <td>Giả định: trạng thái chờ không rõ có thể khiến kiểm tra lặp lại; thiếu hướng dẫn có thể dẫn
+                        đến hỏi hỗ trợ không cần thiết; trạng thái cũ tạo kỳ vọng sai.</td>
+                    </tr>
+                    <tr>
+                      <th>08 · Động lực</th>
+                      <td>Giả định: coi trọng sự công bằng, cập nhật nhất quán, minh bạch điều đã biết và hành động rõ
+                        ràng khi cần làm gì đó.</td>
+                    </tr>
+                    <tr>
+                      <th>09 · Ràng buộc</th>
+                      <td>Có thể gặp bất an do hạn đăng ký; dùng điện thoại chỉ là giả thuyết. Kết nối, kỹ năng số, khả
+                        năng tiếp cận và kênh liên hệ chưa rõ.</td>
+                    </tr>
+                    <tr>
+                      <th>10 · Tình huống</th>
+                      <td>Đợt lập nhóm thường lệ kết thúc khi Huy chưa có nhóm; Huy mở trạng thái ghép và tìm bước tiếp
+                        theo. Không hứa thời gian ghép nếu chưa có cam kết dịch vụ.</td>
+                    </tr>
+                    <tr>
+                      <th>11 · Tiêu chí thành công</th>
+                      <td>Target đề xuất: ít nhất 4/5 người nói đúng trạng thái và bước tiếp theo sau khi xem SCR_08,
+                        không trợ giúp; ghi nhận hiểu sai và kỳ vọng ETA. Chưa kiểm thử.</td>
+                    </tr>
+                    <tr>
+                      <th>12 · Bằng chứng & trạng thái</th>
+                      <td>Proto-persona ứng viên, chưa xác thực; chưa có ID/ngày phỏng vấn hoặc quan sát. Sự tồn tại của
+                        nhu cầu là câu hỏi mở R03 trong <a href="ux/persona-research.md">hồ sơ nghiên cứu</a>.</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -482,55 +642,147 @@
         <div class="persona-research-pack">
           <h3>Phạm vi người dùng & các giả thuyết cần kiểm chứng</h3>
           <p class="persona-research-notice">
-            Bản đồ và nhóm bên dưới là đầu ra desk research để định hướng nghiên cứu, không phải phát hiện từ workshop/phỏng vấn.
+            Bản đồ và nhóm bên dưới là đầu ra desk research để định hướng nghiên cứu, không phải phát hiện từ
+            workshop/phỏng vấn.
             Chưa có bằng chứng người dùng thực tế trong repository.
           </p>
           <h4>Bản đồ Stakeholder / User (dự kiến)</h4>
           <div class="persona-table-wrap">
             <table class="persona-evidence-table">
-              <thead><tr><th>Vai trò</th><th>Quan hệ với tác vụ</th><th>Cần xác minh</th><th>Bằng chứng</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>Vai trò</th>
+                  <th>Quan hệ với tác vụ</th>
+                  <th>Cần xác minh</th>
+                  <th>Bằng chứng</th>
+                </tr>
+              </thead>
               <tbody>
-                <tr><td>Sinh viên chưa có nhóm</td><td>Tìm, so sánh và xin vào nhóm</td><td>Kênh tìm, cách xác nhận chỗ, tiêu chí chọn</td><td>Chưa có</td></tr>
-                <tr><td>Thành viên trong nhóm</td><td>Xem roster, lời mời, bầu trưởng nhóm</td><td>Quyền/đồng thuận khi khóa, trách nhiệm thành viên</td><td>Chưa có</td></tr>
-                <tr><td>Trưởng nhóm được bầu</td><td>Điều phối roster, phiếu bầu và khóa nhóm</td><td>Quyền khóa, quy định và ngoại lệ chính thức</td><td>Chưa có</td></tr>
-                <tr><td>Sinh viên chờ ghép</td><td>Hiểu trạng thái và bước sau hạn</td><td>Quy trình random pool có tồn tại không, ai cập nhật</td><td>Chưa có</td></tr>
-                <tr><td>Giảng viên/đơn vị Capstone</td><td>Stakeholder gián tiếp, xác nhận quy định</td><td>Quy tắc nhóm, thời hạn, xử lý ngoại lệ</td><td>Chưa có</td></tr>
+                <tr>
+                  <td>Sinh viên chưa có nhóm</td>
+                  <td>Tìm, so sánh và xin vào nhóm</td>
+                  <td>Kênh tìm, cách xác nhận chỗ, tiêu chí chọn</td>
+                  <td>Chưa có</td>
+                </tr>
+                <tr>
+                  <td>Thành viên trong nhóm</td>
+                  <td>Xem roster, lời mời, bầu trưởng nhóm</td>
+                  <td>Quyền/đồng thuận khi khóa, trách nhiệm thành viên</td>
+                  <td>Chưa có</td>
+                </tr>
+                <tr>
+                  <td>Trưởng nhóm được bầu</td>
+                  <td>Điều phối roster, phiếu bầu và khóa nhóm</td>
+                  <td>Quyền khóa, quy định và ngoại lệ chính thức</td>
+                  <td>Chưa có</td>
+                </tr>
+                <tr>
+                  <td>Sinh viên chờ ghép</td>
+                  <td>Hiểu trạng thái và bước sau hạn</td>
+                  <td>Quy trình random pool có tồn tại không, ai cập nhật</td>
+                  <td>Chưa có</td>
+                </tr>
+                <tr>
+                  <td>Giảng viên/đơn vị Capstone</td>
+                  <td>Stakeholder gián tiếp, xác nhận quy định</td>
+                  <td>Quy tắc nhóm, thời hạn, xử lý ngoại lệ</td>
+                  <td>Chưa có</td>
+                </tr>
               </tbody>
             </table>
           </div>
           <h4>Cụm Affinity giả định (chưa có dữ liệu nghiên cứu)</h4>
           <div class="persona-table-wrap">
             <table class="persona-evidence-table">
-              <thead><tr><th>Cụm</th><th>Giả định</th><th>Hướng thiết kế cần thử</th><th>Nguồn</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>Cụm</th>
+                  <th>Giả định</th>
+                  <th>Hướng thiết kế cần thử</th>
+                  <th>Nguồn</th>
+                </tr>
+              </thead>
               <tbody>
-                <tr><td>Tìm kiếm & phù hợp</td><td>Chỗ trống/kỹ năng khó xác nhận; có thể dùng chat hoặc bảng tính</td><td>Hiển thị chỗ trống, kỹ năng và trạng thái yêu cầu</td><td>A01–A03 · đề bài/luồng, chưa phải evidence</td></tr>
-                <tr><td>Điều phối & điều kiện</td><td>Roster, vote, lời mời có thể khó theo dõi</td><td>Giải thích điều kiện khóa và bước khắc phục</td><td>A04–A05 · luồng prototype</td></tr>
-                <tr><td>Trạng thái chờ</td><td>Chưa rõ trạng thái ghép có thể gây bất an</td><td>Trạng thái trung thực, không hứa ETA thiếu căn cứ</td><td>A06–A07 · SCR_08, chưa xác minh quy trình</td></tr>
-                <tr><td>Tiếp cận & hoàn cảnh</td><td>Mobile/gián đoạn/tương phản có thể ảnh hưởng tác vụ</td><td>Kiểm tra responsive, tương phản, vùng chạm với người dùng</td><td>A08–A09 · giả định thiết kế</td></tr>
+                <tr>
+                  <td>Tìm kiếm & phù hợp</td>
+                  <td>Chỗ trống/kỹ năng khó xác nhận; có thể dùng chat hoặc bảng tính</td>
+                  <td>Hiển thị chỗ trống, kỹ năng và trạng thái yêu cầu</td>
+                  <td>A01–A03 · đề bài/luồng, chưa phải evidence</td>
+                </tr>
+                <tr>
+                  <td>Điều phối & điều kiện</td>
+                  <td>Roster, vote, lời mời có thể khó theo dõi</td>
+                  <td>Giải thích điều kiện khóa và bước khắc phục</td>
+                  <td>A04–A05 · luồng prototype</td>
+                </tr>
+                <tr>
+                  <td>Trạng thái chờ</td>
+                  <td>Chưa rõ trạng thái ghép có thể gây bất an</td>
+                  <td>Trạng thái trung thực, không hứa ETA thiếu căn cứ</td>
+                  <td>A06–A07 · SCR_08, chưa xác minh quy trình</td>
+                </tr>
+                <tr>
+                  <td>Tiếp cận & hoàn cảnh</td>
+                  <td>Mobile/gián đoạn/tương phản có thể ảnh hưởng tác vụ</td>
+                  <td>Kiểm tra responsive, tương phản, vùng chạm với người dùng</td>
+                  <td>A08–A09 · giả định thiết kế</td>
+                </tr>
               </tbody>
             </table>
           </div>
           <h4>Persona Coverage & truy vết tới kiểm thử</h4>
           <div class="persona-table-wrap">
             <table class="persona-evidence-table">
-              <thead><tr><th>Persona</th><th>Nhu cầu giả định</th><th>Quyết định UI cần thử</th><th>Kiểm thử / chỉ số</th><th>Bằng chứng hiện có</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>Persona</th>
+                  <th>Nhu cầu giả định</th>
+                  <th>Quyết định UI cần thử</th>
+                  <th>Kiểm thử / chỉ số</th>
+                  <th>Bằng chứng hiện có</th>
+                </tr>
+              </thead>
               <tbody>
-                <tr><td>P01 · Minh</td><td>Tìm nhóm còn chỗ, phù hợp kỹ năng</td><td>Bộ lọc, chỗ trống, kỹ năng, trạng thái yêu cầu</td><td>Chọn nhóm đúng; đo thời gian, lỗi, lý do chọn</td><td>Chưa có</td></tr>
-                <tr><td>P02 · Phúc</td><td>Biết điều kiện roster và bước khắc phục</td><td>Hiện lý do khóa bị chặn, quyền và hành động tuyển thêm</td><td>Nhận diện roster 3 người không hợp lệ; thời gian, trợ giúp</td><td>Chưa có</td></tr>
-                <tr><td>P03 · Huy</td><td>Hiểu trạng thái ghép và bước tiếp theo</td><td>Trạng thái trung thực, hướng dẫn, không ETA thiếu căn cứ</td><td>Nói đúng trạng thái/bước tiếp; đo hiểu sai và kỳ vọng</td><td>Chưa có</td></tr>
+                <tr>
+                  <td>P01 · Minh</td>
+                  <td>Tìm nhóm còn chỗ, phù hợp kỹ năng</td>
+                  <td>Bộ lọc, chỗ trống, kỹ năng, trạng thái yêu cầu</td>
+                  <td>Chọn nhóm đúng; đo thời gian, lỗi, lý do chọn</td>
+                  <td>Chưa có</td>
+                </tr>
+                <tr>
+                  <td>P02 · Phúc</td>
+                  <td>Biết điều kiện roster và bước khắc phục</td>
+                  <td>Hiện lý do khóa bị chặn, quyền và hành động tuyển thêm</td>
+                  <td>Nhận diện roster 3 người không hợp lệ; thời gian, trợ giúp</td>
+                  <td>Chưa có</td>
+                </tr>
+                <tr>
+                  <td>P03 · Huy</td>
+                  <td>Hiểu trạng thái ghép và bước tiếp theo</td>
+                  <td>Trạng thái trung thực, hướng dẫn, không ETA thiếu căn cứ</td>
+                  <td>Nói đúng trạng thái/bước tiếp; đo hiểu sai và kỳ vọng</td>
+                  <td>Chưa có</td>
+                </tr>
               </tbody>
             </table>
           </div>
           <h4>Backlog nghiên cứu ưu tiên</h4>
           <ul class="list-check persona-research-backlog">
-            <li><span><strong>R01 · P0:</strong> Tìm nhóm bằng kênh nào, xác nhận chỗ/kỹ năng ra sao? Phỏng vấn hành vi gần nhất; lưu bước, workaround và ID nguồn.</span></li>
-            <li><span><strong>R02 · P0:</strong> Quyền trưởng nhóm, quy tắc roster/vote/lock là gì? Phỏng vấn thành viên và xác minh riêng với nguồn quy định có thẩm quyền.</span></li>
-            <li><span><strong>R03 · P0:</strong> Random pool có phải quy trình thật? Hỏi sinh viên và đơn vị vận hành; bỏ hoặc sửa P03 nếu giả thuyết không được xác nhận.</span></li>
-            <li><span><strong>R04–R05 · P1:</strong> Xác minh pain, workaround, thiết bị, kết nối và nhu cầu trợ năng qua phỏng vấn/quan sát có đồng ý.</span></li>
-            <li><span><strong>R06 · P1:</strong> Chạy usability test cho ba tác vụ; ghi hoàn thành, thời gian, lỗi, trợ giúp và phiên bản prototype. Chưa có kết quả.</span></li>
+            <li><span><strong>R01 · P0:</strong> Tìm nhóm bằng kênh nào, xác nhận chỗ/kỹ năng ra sao? Phỏng vấn hành vi
+                gần nhất; lưu bước, workaround và ID nguồn.</span></li>
+            <li><span><strong>R02 · P0:</strong> Quyền trưởng nhóm, quy tắc roster/vote/lock là gì? Phỏng vấn thành viên
+                và xác minh riêng với nguồn quy định có thẩm quyền.</span></li>
+            <li><span><strong>R03 · P0:</strong> Random pool có phải quy trình thật? Hỏi sinh viên và đơn vị vận hành;
+                bỏ hoặc sửa P03 nếu giả thuyết không được xác nhận.</span></li>
+            <li><span><strong>R04–R05 · P1:</strong> Xác minh pain, workaround, thiết bị, kết nối và nhu cầu trợ năng
+                qua phỏng vấn/quan sát có đồng ý.</span></li>
+            <li><span><strong>R06 · P1:</strong> Chạy usability test cho ba tác vụ; ghi hoàn thành, thời gian, lỗi, trợ
+                giúp và phiên bản prototype. Chưa có kết quả.</span></li>
           </ul>
           <p class="persona-research-link">
-            <a href="ux/persona-research.md">Mở hồ sơ nghiên cứu đầy đủ: kế hoạch phỏng vấn, sổ bằng chứng trống, checklist guideline và tiêu chí giữ/tách persona →</a>
+            <a href="ux/persona-research.md">Mở hồ sơ nghiên cứu đầy đủ: kế hoạch phỏng vấn, sổ bằng chứng trống,
+              checklist guideline và tiêu chí giữ/tách persona →</a>
           </p>
         </div>
       </div>
@@ -544,7 +796,8 @@
         <span class="section-tag">02. Cấu trúc & điều hướng</span>
         <h2 class="section-title">Kiến trúc thông tin & luồng người dùng tương tác</h2>
         <p class="section-subtitle">
-          Cấu trúc phân cấp màn hình và 3 luồng thao tác hoàn chỉnh, gồm luồng thuận, luồng thay thế và cách khắc phục lỗi.
+          Cấu trúc phân cấp màn hình và 3 luồng thao tác hoàn chỉnh, gồm luồng thuận, luồng thay thế và cách khắc phục
+          lỗi.
         </p>
       </div>
 
@@ -579,7 +832,8 @@
           <div style="background: var(--color-surface-subtle); padding: 14px; border-radius: 8px;">
             <strong style="color: var(--color-primary); font-size: 0.85rem;">Màn hình chi tiết / hộp thoại</strong>
             <div style="font-size: 0.85rem; margin-top: 4px;">
-              <code>SCR_04</code> Chi tiết nhóm • <code>SCR_06</code> Bầu trưởng nhóm • <code>SCR_07</code> Kiểm tra khóa nhóm •
+              <code>SCR_04</code> Chi tiết nhóm • <code>SCR_06</code> Bầu trưởng nhóm • <code>SCR_07</code> Kiểm tra
+              khóa nhóm •
               <code>SCR_08</code> Danh sách ghép nhóm tự động
             </div>
           </div>
@@ -654,7 +908,8 @@
         <div class="card-box">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
             <h4 style="font-size: 1.15rem; font-weight: 700;">Luồng 2: Bầu trưởng nhóm dân chủ</h4>
-            <span class="severity-badge" style="background: var(--color-info-bg); color: var(--color-info);">Luồng phân quyền</span>
+            <span class="severity-badge" style="background: var(--color-info-bg); color: var(--color-info);">Luồng phân
+              quyền</span>
           </div>
           <div class="flow-steps-timeline">
             <div class="flow-step-item">
@@ -713,9 +968,10 @@
             <div class="flow-step-item is-error">
               <div class="flow-step-node"></div>
               <div class="flow-step-header">
-                <span class="flow-step-title" style="color: var(--color-error);">2. Trạng thái lỗi (dưới 4 thành viên)</span>
-                    <span class="flow-screen-badge"
-                      style="background: var(--color-error-bg); color: var(--color-error);">Lỗi SCR_07</span>
+                <span class="flow-step-title" style="color: var(--color-error);">2. Trạng thái lỗi (dưới 4 thành
+                  viên)</span>
+                <span class="flow-screen-badge"
+                  style="background: var(--color-error-bg); color: var(--color-error);">Lỗi SCR_07</span>
               </div>
               <p class="flow-step-desc">
                 <strong>Kiểm tra của hệ thống:</strong> Nếu nhóm chỉ có 3 thành viên, nút chính “Khóa danh sách nhóm”
@@ -727,7 +983,8 @@
             <div class="flow-step-item">
               <div class="flow-step-node" style="border-color: var(--color-success);"></div>
               <div class="flow-step-header">
-                <span class="flow-step-title" style="color: var(--color-success);">3. Khắc phục: Mời người từ danh sách chờ</span>
+                <span class="flow-step-title" style="color: var(--color-success);">3. Khắc phục: Mời người từ danh sách
+                  chờ</span>
                 <span class="flow-screen-badge"
                   style="background: var(--color-success-bg); color: var(--color-success);">Cách khắc phục</span>
               </div>
@@ -769,31 +1026,33 @@
       <!-- Color Palette -->
       <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 16px;">Bảng màu & kiểm tra độ tương phản</h3>
       <div class="tokens-grid">
-        <!-- Token 1: Primary Orange -->
+        <!-- Token 1: Primary Growth Green -->
         <div class="token-color-card">
-          <div class="token-color-preview" style="background-color: #F27024;">
-            <span class="token-contrast-pill">2,95:1 · Chỉ dùng cho chữ lớn</span>
+          <div class="token-color-preview" style="background-color: #15803D;">
+            <span class="token-contrast-pill">4.97:1 (AA) · Đạt chuẩn chữ & nút</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
               <span class="token-code">color-primary</span>
-              <button class="token-hex-btn btn-copy" data-copy-text="#F27024">#F27024</button>
+              <button class="token-hex-btn btn-copy" data-copy-text="#15803D">#15803D</button>
             </div>
-            <div class="token-role-text">Cam FPT • Nút hành động chính, biểu tượng đang chọn và điểm nhấn thương hiệu.</div>
+            <div class="token-role-text">Xanh tăng trưởng • Nút hành động chính, biểu tượng đang chọn và biểu trưng cho
+              sự phát triển dự án khởi nghiệp EXE.</div>
           </div>
         </div>
 
         <!-- Token 2: Primary Container -->
         <div class="token-color-card">
-          <div class="token-color-preview" style="background-color: #FFF1E8; border-bottom: 1px solid #E1E3E5;">
-            <span class="token-contrast-pill" style="background: rgba(0,0,0,0.5);">Sắc độ nhẹ</span>
+          <div class="token-color-preview" style="background-color: #DCFCE7; border-bottom: 1px solid #E1E3E5;">
+            <span class="token-contrast-pill" style="background: rgba(0,0,0,0.65);">10.5:1 (AAA)</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
               <span class="token-code">color-primary-container</span>
-              <button class="token-hex-btn btn-copy" data-copy-text="#FFF1E8">#FFF1E8</button>
+              <button class="token-hex-btn btn-copy" data-copy-text="#DCFCE7">#DCFCE7</button>
             </div>
-            <div class="token-role-text">Nền cam nhạt cho thẻ đang chọn và nhãn trạng thái.</div>
+            <div class="token-role-text">Nền xanh nhạt cho thẻ đang chọn, huy hiệu năng động và điểm nhấn tương tác.
+            </div>
           </div>
         </div>
 
@@ -826,17 +1085,18 @@
           </div>
         </div>
 
-        <!-- Token 5: Success Green -->
+        <!-- Token 5: Verification Teal (Success) -->
         <div class="token-color-card">
-          <div class="token-color-preview" style="background-color: #0D8244;">
-            <span class="token-contrast-pill">4.9:1 (AA)</span>
+          <div class="token-color-preview" style="background-color: #0F766E;">
+            <span class="token-contrast-pill">5.0:1 (AA)</span>
           </div>
           <div class="token-info-content">
             <div class="token-name-row">
               <span class="token-code">color-success</span>
-              <button class="token-hex-btn btn-copy" data-copy-text="#0D8244">#0D8244</button>
+              <button class="token-hex-btn btn-copy" data-copy-text="#0F766E">#0F766E</button>
             </div>
-            <div class="token-role-text">Nhóm đã khóa, thành viên đã xác nhận, vị trí đã đủ người.</div>
+            <div class="token-role-text">Xanh ngọc xác thực (Teal) • Tránh trùng với màu chính: Nhóm đã khóa, thành viên
+              đã xác nhận, vị trí đã đủ người.</div>
           </div>
         </div>
 
@@ -857,7 +1117,8 @@
 
       <!-- Typography Specimen -->
       <div class="card-box" style="margin-top: 32px;">
-        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 16px;">Thang kiểu chữ (chuẩn Material Design 3)</h3>
+        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 16px;">Thang kiểu chữ (chuẩn Material Design 3)
+        </h3>
         <table class="type-specimen-table">
           <thead>
             <tr>
@@ -933,7 +1194,8 @@
 
       <!-- Initial Generations Showcase -->
       <div class="card-box" style="margin-bottom: 32px;">
-        <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 12px;">Các giao diện Stitch tạo ban đầu (màn hình 03 và 05)</h3>
+        <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 12px;">Các giao diện Stitch tạo ban đầu (màn hình
+          03 và 05)</h3>
         <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 16px;">
           Các giao diện ban đầu được tạo nhanh bằng Google Stitch để thiết lập bố cục cơ bản, sau đó được đánh giá và
           cải thiện có hệ thống:
@@ -992,8 +1254,10 @@
                 <img src="assets/stitch/iteration_1_after.png" alt="Sau vòng tinh chỉnh 1" class="zoomable-img">
               </div>
               <div class="diff-explain">
-                <strong>Cải tiến thiết kế:</strong> Thêm nhãn trạng thái màu xanh (“3/5 vị trí đã có người - còn 2 chỗ”),
-                5 vòng tròn đại diện thành viên (3 vị trí đã có người, 2 vị trí trống nét đứt) và nút hành động cao 48 dp.
+                <strong>Cải tiến thiết kế:</strong> Thêm nhãn trạng thái màu xanh (“3/5 vị trí đã có người - còn 2
+                chỗ”),
+                5 vòng tròn đại diện thành viên (3 vị trí đã có người, 2 vị trí trống nét đứt) và nút hành động cao 48
+                dp.
               </div>
             </div>
           </div>
@@ -1002,13 +1266,15 @@
             <div class="prompt-box-header">
               <span class="prompt-box-title">Bản dịch tiếng Việt câu lệnh gửi Google Stitch:</span>
               <button class="btn-copy token-hex-btn"
-                data-copy-text="Tinh chỉnh thẻ nhóm trong SCR_03 (Tìm nhóm): 1. Thêm nhãn trực quan ở góc trên bên phải: nền xanh (#E6F4EA), chữ #0D8244 '3/5 vị trí đã có người - còn 2 chỗ'. 2. Với nhóm đủ người (5/5), hiển thị nhãn xám 'Đã đủ (5/5)' và vô hiệu hóa nút chính. 3. Hiển thị 5 vòng tròn đại diện: 3 thành viên và 2 vị trí trống nét đứt có biểu tượng '+'. 4. Nút chính ghi 'Xem chi tiết và tham gia', cao tối thiểu 48dp.">Sao chép câu lệnh</button>
+                data-copy-text="Tinh chỉnh thẻ nhóm trong SCR_03 (Tìm nhóm): 1. Thêm nhãn trực quan ở góc trên bên phải: nền xanh (#E6F4EA), chữ #0D8244 '3/5 vị trí đã có người - còn 2 chỗ'. 2. Với nhóm đủ người (5/5), hiển thị nhãn xám 'Đã đủ (5/5)' và vô hiệu hóa nút chính. 3. Hiển thị 5 vòng tròn đại diện: 3 thành viên và 2 vị trí trống nét đứt có biểu tượng '+'. 4. Nút chính ghi 'Xem chi tiết và tham gia', cao tối thiểu 48dp.">Sao
+                chép câu lệnh</button>
             </div>
             <div class="prompt-code">Tinh chỉnh thẻ nhóm trong SCR_03 (Tìm nhóm):
-1. Thêm nhãn trực quan ở góc trên bên phải: nền xanh (#E6F4EA), chữ #0D8244 “3/5 vị trí đã có người - còn 2 chỗ”.
-2. Với nhóm đủ người (5/5), hiển thị nhãn xám “Đã đủ (5/5)” và vô hiệu hóa nút chính.
-3. Hiển thị 5 vòng tròn đại diện: 3 thành viên và 2 vị trí trống nét đứt có biểu tượng “+”.
-4. Nút chính ghi “Xem chi tiết và tham gia”, cao tối thiểu 48dp, nền #F27024.</div>
+              1. Thêm nhãn trực quan ở góc trên bên phải: nền xanh (#E6F4EA), chữ #0D8244 “3/5 vị trí đã có người - còn
+              2 chỗ”.
+              2. Với nhóm đủ người (5/5), hiển thị nhãn xám “Đã đủ (5/5)” và vô hiệu hóa nút chính.
+              3. Hiển thị 5 vòng tròn đại diện: 3 thành viên và 2 vị trí trống nét đứt có biểu tượng “+”.
+              4. Nút chính ghi “Xem chi tiết và tham gia”, cao tối thiểu 48dp, nền #F27024.</div>
           </div>
         </div>
 
@@ -1058,12 +1324,16 @@
             <div class="prompt-box-header">
               <span class="prompt-box-title">Bản dịch tiếng Việt câu lệnh gửi Google Stitch:</span>
               <button class="btn-copy token-hex-btn"
-                data-copy-text="Tạo trạng thái lỗi và cách khắc phục cho SCR_07 (Kiểm tra khóa nhóm) khi nhóm chỉ có 3/5 thành viên: 1. Hiển thị biểu ngữ cảnh báo lỗi rõ ràng: nền #FDF2F2, viền #BA1A1A, chữ đậm: 'Chưa đủ điều kiện khóa danh sách: nhóm hiện có 3 thành viên. Quy định đồ án FPT yêu cầu ít nhất 4 thành viên.' 2. Vô hiệu hóa nút 'Khóa danh sách nhóm'. 3. Thêm thẻ khắc phục: 'Cần thêm 1 thành viên? Mời sinh viên chưa có nhóm từ danh sách chờ' cùng nút phụ 'Mời từ danh sách chờ'.">Sao chép câu lệnh</button>
+                data-copy-text="Tạo trạng thái lỗi và cách khắc phục cho SCR_07 (Kiểm tra khóa nhóm) khi nhóm chỉ có 3/5 thành viên: 1. Hiển thị biểu ngữ cảnh báo lỗi rõ ràng: nền #FDF2F2, viền #BA1A1A, chữ đậm: 'Chưa đủ điều kiện khóa danh sách: nhóm hiện có 3 thành viên. Quy định đồ án FPT yêu cầu ít nhất 4 thành viên.' 2. Vô hiệu hóa nút 'Khóa danh sách nhóm'. 3. Thêm thẻ khắc phục: 'Cần thêm 1 thành viên? Mời sinh viên chưa có nhóm từ danh sách chờ' cùng nút phụ 'Mời từ danh sách chờ'.">Sao
+                chép câu lệnh</button>
             </div>
-            <div class="prompt-code">Tạo trạng thái lỗi và cách khắc phục cho SCR_07 (Kiểm tra khóa nhóm) khi nhóm chỉ có 3/5 thành viên:
-1. Hiển thị biểu ngữ cảnh báo lỗi rõ ràng: nền #FDF2F2, viền #BA1A1A, chữ đậm: “Chưa đủ điều kiện khóa danh sách: nhóm hiện có 3 thành viên. Quy định đồ án FPT yêu cầu ít nhất 4 thành viên.”
-2. Vô hiệu hóa nút chính “Khóa danh sách nhóm” (nền xám #E1E3E5).
-3. Thêm thẻ khắc phục: “Cần thêm 1 thành viên? Mời sinh viên chưa có nhóm từ danh sách chờ” cùng nút phụ “Mời từ danh sách chờ”.</div>
+            <div class="prompt-code">Tạo trạng thái lỗi và cách khắc phục cho SCR_07 (Kiểm tra khóa nhóm) khi nhóm chỉ
+              có 3/5 thành viên:
+              1. Hiển thị biểu ngữ cảnh báo lỗi rõ ràng: nền #FDF2F2, viền #BA1A1A, chữ đậm: “Chưa đủ điều kiện khóa
+              danh sách: nhóm hiện có 3 thành viên. Quy định đồ án FPT yêu cầu ít nhất 4 thành viên.”
+              2. Vô hiệu hóa nút chính “Khóa danh sách nhóm” (nền xám #E1E3E5).
+              3. Thêm thẻ khắc phục: “Cần thêm 1 thành viên? Mời sinh viên chưa có nhóm từ danh sách chờ” cùng nút phụ
+              “Mời từ danh sách chờ”.</div>
           </div>
         </div>
 
@@ -1113,13 +1383,14 @@
             <div class="prompt-box-header">
               <span class="prompt-box-title">Bản dịch tiếng Việt câu lệnh gửi Google Stitch:</span>
               <button class="btn-copy token-hex-btn"
-                data-copy-text="Thiết kế lại SCR_06 (Bầu trưởng nhóm): 1. Chuyển mỗi ứng viên thành thẻ có thể chọn, cao tối thiểu 64 dp. 2. Tăng độ tương phản: tên ứng viên đậm 16sp (#1A1D1E - 15,6:1), vai trò 14sp (#596066 - 5,4:1). 3. Trạng thái được chọn có viền liền 2 dp màu #F27024, nền cam nhạt #FFF1E8 và dấu kiểm tròn 24 dp. 4. Hiển thị nhãn số phiếu theo thời gian thực.">Sao chép câu lệnh</button>
+                data-copy-text="Thiết kế lại SCR_06 (Bầu trưởng nhóm): 1. Chuyển mỗi ứng viên thành thẻ có thể chọn, cao tối thiểu 64 dp. 2. Tăng độ tương phản: tên ứng viên đậm 16sp (#1A1D1E - 15,6:1), vai trò 14sp (#596066 - 5,4:1). 3. Trạng thái được chọn có viền liền 2 dp màu #F27024, nền cam nhạt #FFF1E8 và dấu kiểm tròn 24 dp. 4. Hiển thị nhãn số phiếu theo thời gian thực.">Sao
+                chép câu lệnh</button>
             </div>
             <div class="prompt-code">Thiết kế lại SCR_06 (Bầu trưởng nhóm):
-1. Chuyển mỗi ứng viên thành thẻ có thể chọn, cao tối thiểu 64 dp (vượt vùng chạm 48×48 dp).
-2. Tăng độ tương phản: tên ứng viên đậm 16sp (#1A1D1E - 15,6:1), vai trò 14sp (#596066 - 5,4:1).
-3. Trạng thái được chọn có viền liền 2 dp màu #F27024, nền cam nhạt #FFF1E8 và dấu kiểm tròn 24 dp.
-4. Hiển thị nhãn số phiếu theo thời gian thực (ví dụ “2 phiếu”) dùng #0D8244 cho ứng viên dẫn đầu.</div>
+              1. Chuyển mỗi ứng viên thành thẻ có thể chọn, cao tối thiểu 64 dp (vượt vùng chạm 48×48 dp).
+              2. Tăng độ tương phản: tên ứng viên đậm 16sp (#1A1D1E - 15,6:1), vai trò 14sp (#596066 - 5,4:1).
+              3. Trạng thái được chọn có viền liền 2 dp màu #F27024, nền cam nhạt #FFF1E8 và dấu kiểm tròn 24 dp.
+              4. Hiển thị nhãn số phiếu theo thời gian thực (ví dụ “2 phiếu”) dùng #0D8244 cho ứng viên dẫn đầu.</div>
           </div>
         </div>
       </div>
@@ -1175,12 +1446,14 @@
               <td><strong>F-02</strong></td>
               <td><code>SCR_03</code> (Tìm nhóm)</td>
               <td><strong>WCAG 2.1 SC 1.4.3: Độ tương phản tối thiểu</strong></td>
-              <td>Nhãn kỹ năng phụ dùng chữ xám nhạt <code>#A0A5AA</code> trên nền <code>#F0F1F2</code> (tương phản 2,3:1,
+              <td>Nhãn kỹ năng phụ dùng chữ xám nhạt <code>#A0A5AA</code> trên nền <code>#F0F1F2</code> (tương phản
+                2,3:1,
                 không đạt mức tối thiểu 4,5:1).</td>
               <td><span class="severity-badge severity-high">Cao</span></td>
               <td><span class="decision-badge decision-accepted">ĐÃ CHẤP NHẬN</span></td>
               <td>Cập nhật token nhãn sang nền <code>#E9ECEF</code> và chữ <code>#343A40</code>, đạt tương phản
-                <strong>7,2:1</strong> (vượt mức AAA).</td>
+                <strong>7,2:1</strong> (vượt mức AAA).
+              </td>
             </tr>
 
             <tr class="critique-row" data-severity="medium">
@@ -1202,7 +1475,8 @@
               <td>Liên kết “Đổi phiếu” là chữ 12sp đặt cùng dòng, vùng chạm thực tế chỉ 24×14 dp.</td>
               <td><span class="severity-badge severity-high">Cao</span></td>
               <td><span class="decision-badge decision-modified">ĐÃ ĐIỀU CHỈNH</span></td>
-              <td>Đổi thành nút viền có đệm 12×16 dp, cao tối thiểu 48 dp; chỉ hiển thị khi thời gian bỏ phiếu còn mở.</td>
+              <td>Đổi thành nút viền có đệm 12×16 dp, cao tối thiểu 48 dp; chỉ hiển thị khi thời gian bỏ phiếu còn mở.
+              </td>
             </tr>
 
             <tr class="critique-row" data-severity="medium">
@@ -1212,7 +1486,8 @@
               <td>Màn hình tổng quan chỉ hiển thị ngày hạn, khiến sinh viên phải tự tính thời gian còn lại.</td>
               <td><span class="severity-badge severity-medium">Trung bình</span></td>
               <td><span class="decision-badge decision-accepted">ĐÃ CHẤP NHẬN</span></td>
-              <td>Thay ngày tĩnh bằng thẻ đếm ngược “⏳ Còn 2 ngày 14 giờ”; chuyển sang màu cam cảnh báo khi còn dưới 48 giờ.</td>
+              <td>Thay ngày tĩnh bằng thẻ đếm ngược “⏳ Còn 2 ngày 14 giờ”; chuyển sang màu cam cảnh báo khi còn dưới 48
+                giờ.</td>
             </tr>
           </tbody>
         </table>
@@ -1242,13 +1517,22 @@
                 <span class="phone-time">9:41</span>
                 <span class="phone-notch"></span>
                 <span class="phone-status-icons">
-                  <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="4.3" y="5.5" width="3" height="6.5" rx="1"/><rect x="8.6" y="3" width="3" height="9" rx="1"/><rect x="12.9" y="0" width="3" height="12" rx="1"/></svg>
-                  <svg width="22" height="12" viewBox="0 0 22 12" fill="none"><rect x="0.5" y="0.5" width="18" height="11" rx="3" stroke="currentColor" opacity="0.5"/><rect x="2" y="2" width="13" height="8" rx="1.6" fill="currentColor"/><rect x="19.8" y="4" width="1.6" height="4" rx="0.8" fill="currentColor" opacity="0.5"/></svg>
+                  <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor">
+                    <rect x="0" y="8" width="3" height="4" rx="1" />
+                    <rect x="4.3" y="5.5" width="3" height="6.5" rx="1" />
+                    <rect x="8.6" y="3" width="3" height="9" rx="1" />
+                    <rect x="12.9" y="0" width="3" height="12" rx="1" />
+                  </svg>
+                  <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
+                    <rect x="0.5" y="0.5" width="18" height="11" rx="3" stroke="currentColor" opacity="0.5" />
+                    <rect x="2" y="2" width="13" height="8" rx="1.6" fill="currentColor" />
+                    <rect x="19.8" y="4" width="1.6" height="4" rx="0.8" fill="currentColor" opacity="0.5" />
+                  </svg>
                 </span>
               </div>
               <div class="phone-screen-scroll" id="phoneScreenScroll">
                 <img id="phoneScreenImg" src="assets/figma/SCR_01_ Sign In (FPT SSO).png" alt="Màn hình đang chọn"
-                class="phone-screen-img zoomable-img">
+                  class="phone-screen-img zoomable-img">
               </div>
               <div class="phone-home-indicator" aria-hidden="true"></div>
             </div>
@@ -1272,14 +1556,16 @@
           <div class="screen-detail-card">
             <div class="screen-detail-header">
               <span id="screenCodeTag" class="screen-code-tag">SCR_01</span>
-              <span id="screenFlow" style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary);">Đăng nhập & khởi tạo</span>
+              <span id="screenFlow" style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary);">Đăng nhập
+                & khởi tạo</span>
             </div>
 
             <h3 id="screenFullTitle" class="screen-full-title">Đăng nhập (SSO Đại học FPT)</h3>
 
             <div style="margin: 16px 0;">
               <strong
-                style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-text-secondary); display: block; margin-bottom: 4px;">Mục đích
+                style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-text-secondary); display: block; margin-bottom: 4px;">Mục
+                đích
                 chính:</strong>
               <p id="screenPurpose" style="font-size: 0.95rem; color: var(--color-text-primary);">
                 Xác thực sinh viên bằng tài khoản trường (@fpt.edu.vn), khởi tạo vai trò và trạng thái đăng ký học kỳ.
@@ -1289,7 +1575,8 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 16px 0;">
               <div>
                 <strong
-                  style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-text-secondary); display: block; margin-bottom: 6px;">Nội dung
+                  style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-text-secondary); display: block; margin-bottom: 6px;">Nội
+                  dung
                   hiển thị:</strong>
                 <ul id="screenContentList"
                   style="padding-left: 20px; font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.6;">
@@ -1302,7 +1589,8 @@
 
               <div>
                 <strong
-                  style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-text-secondary); display: block; margin-bottom: 6px;">Thao tác
+                  style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-text-secondary); display: block; margin-bottom: 6px;">Thao
+                  tác
                   người dùng:</strong>
                 <ul id="screenActionsList"
                   style="padding-left: 20px; font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.6;">
@@ -1316,7 +1604,8 @@
             <div
               style="background-color: var(--color-surface-subtle); padding: 14px; border-radius: 8px; margin-top: 16px;">
               <strong
-                style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-primary); display: block; margin-bottom: 2px;">Quyết định
+                style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-primary); display: block; margin-bottom: 2px;">Quyết
+                định
                 thiết kế & công thái học:</strong>
               <p id="screenDecisions" style="font-size: 0.85rem; color: var(--color-text-primary);">
                 Giới hạn tên miền để loại trừ tài khoản không thuộc FPT; nút cao 48 dp giúp thao tác thuận tiện trên
@@ -1328,7 +1617,8 @@
       </div>
 
       <!-- Lưới bộ sưu tập 9 màn hình -->
-      <h3 style="font-size: 1.3rem; font-weight: 800; margin-top: 48px; margin-bottom: 16px;">Lưới đầy đủ 9 màn hình</h3>
+      <h3 style="font-size: 1.3rem; font-weight: 800; margin-top: 48px; margin-bottom: 16px;">Lưới đầy đủ 9 màn hình
+      </h3>
       <div class="mockup-grid-9">
         <div class="mockup-grid-card" data-screen="SCR_01">
           <div class="mockup-thumb-wrap">
@@ -1517,7 +1807,8 @@
   <!-- Hộp thoại xem trước ảnh độ phân giải cao -->
   <div id="lightboxModal" class="lightbox-modal">
     <div class="lightbox-content">
-      <button id="lightboxClose" class="lightbox-close" title="Đóng ảnh xem trước" aria-label="Đóng ảnh xem trước">&times;</button>
+      <button id="lightboxClose" class="lightbox-close" title="Đóng ảnh xem trước"
+        aria-label="Đóng ảnh xem trước">&times;</button>
       <img id="lightboxImage" alt="Ảnh xem phóng to" class="lightbox-image">
       <div id="lightboxCaption" class="lightbox-caption"></div>
     </div>
@@ -1526,10 +1817,15 @@
   <!-- Chân trang -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <div class="brand-name" style="justify-content: center;">EXE<span>Matching</span></div>
+      <div class="brand-name" style="justify-content: center; gap: 10px;">
+        <div class="brand-logo-icon" style="width: 32px; height: 32px; padding: 3px; border-radius: 8px;">
+          <img src="assets/Logo.png" alt="EXEMatching Logo" class="brand-logo-img">
+        </div>
+        <span>EXE<span style="color: var(--color-primary);">Matching</span></span>
+      </div>
       <p class="footer-copy">
         PRM393 — Lập trình di động & Thiết kế UI/UX có hỗ trợ AI (Lab 2) <br>
-        Nhóm 8 • Lớp SE1920 • Đại học FPT
+        Nhóm 8 • Lớp SE1920
       </p>
       <div style="display: flex; gap: 16px; margin-top: 8px;">
         <a href="https://www.figma.com/design/Z42q9LamOZojK54FSBDcCd/PRM_LAB2?node-id=1-6&t=BbIncMZGSu1fgmSM-1"

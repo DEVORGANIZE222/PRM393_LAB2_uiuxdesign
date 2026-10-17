@@ -9,14 +9,14 @@ This document provides complete implementation specifications for Flutter develo
 ### Table A: Design Tokens to Flutter Theme Mappings
 | Token Name | Token Value | Flutter ThemeData / Constant Name | Usage in Code |
 |---|---|---|---|
-| `color-primary` | `#F27024` | `Theme.of(context).colorScheme.primary` | Primary action buttons, active icons |
-| `color-primary-container` | `#FFF1E8` | `Theme.of(context).colorScheme.primaryContainer` | Selected card tint, subtle chips |
+| `color-primary` | `#15803D` | `Theme.of(context).colorScheme.primary` | Primary action buttons, active icons (Growth Green) |
+| `color-primary-container` | `#DCFCE7` | `Theme.of(context).colorScheme.primaryContainer` | Selected card tint, subtle chips, growth badges |
 | `color-on-primary` | `#FFFFFF` | `Theme.of(context).colorScheme.onPrimary` | Text & icons on primary button |
 | `color-surface` | `#FFFFFF` | `Theme.of(context).colorScheme.surface` | Cards, dialog background, sheets |
 | `color-background` | `#F8F9FA` | `Theme.of(context).colorScheme.background` | Screen background scaffold |
 | `color-text-primary` | `#1A1D1E` | `Theme.of(context).colorScheme.onBackground` | Headlines, titles, primary text |
 | `color-text-secondary` | `#596066` | `Theme.of(context).colorScheme.onSurfaceVariant` | Subtitles, metadata, timestamps |
-| `color-success` | `#0D8244` | `CustomColors.success` (`Color(0xFF0D8244)`) | Locked badge, slot filled indicator |
+| `color-success` | `#0F766E` | `CustomColors.success` (`Color(0xFF0F766E)`) | Locked badge, slot filled indicator (Verification Teal) |
 | `color-error` | `#BA1A1A` | `Theme.of(context).colorScheme.error` | Error banner, destructive CTA |
 | `color-warning` | `#B26A00` | `CustomColors.warning` (`Color(0xFFB26A00)`) | Deadline urgent countdown |
 | `color-border` | `#E1E3E5` | `Theme.of(context).colorScheme.outlineVariant` | Card outline, input borders |
