@@ -4,12 +4,13 @@
    ========================================================================== */
 
 :root {
-  /* Brand Tokens */
-  --color-primary: #F27024;
-  --color-primary-hover: #D95D16;
-  --color-primary-container: #FFF1E8;
+  /* Brand Tokens (Growth Green - Sự phát triển & Khát vọng vươn lên) */
+  --color-primary: #15803D;
+  --color-primary-hover: #166534;
+  --color-primary-container: #DCFCE7;
   --color-on-primary: #FFFFFF;
-  
+  --color-on-primary-container: #14532D;
+
   /* Neutral / Surface Tokens */
   --color-surface: #FFFFFF;
   --color-surface-elevated: #FFFFFF;
@@ -17,15 +18,15 @@
   --color-surface-subtle: #F1F3F5;
   --color-border: #E1E3E5;
   --color-border-subtle: #ECEEF0;
-  
+
   /* Text Tokens */
   --color-text-primary: #1A1D1E;
   --color-text-secondary: #596066;
   --color-text-tertiary: #8A929A;
-  
-  /* Status Tokens */
-  --color-success: #0D8244;
-  --color-success-bg: #E6F4EA;
+
+  /* Status Tokens (Tách bạch Semantic Success bằng Verification Teal để tránh nhầm với Primary) */
+  --color-success: #0F766E;
+  --color-success-bg: #CCFBF1;
   --color-error: #BA1A1A;
   --color-error-bg: #FDF2F2;
   --color-warning: #B26A00;
@@ -36,7 +37,7 @@
   /* Typography */
   --font-main: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-code: 'JetBrains Mono', 'Fira Code', monospace;
-  
+
   /* Spacing */
   --spacing-4: 4px;
   --spacing-8: 8px;
@@ -60,8 +61,8 @@
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
-  --shadow-glow: 0 0 24px rgba(242, 112, 36, 0.25);
-  
+  --shadow-glow: 0 0 24px rgba(21, 128, 61, 0.25);
+
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -75,24 +76,26 @@
   --color-surface-subtle: #242A33;
   --color-border: #2D3440;
   --color-border-subtle: #1F242C;
-  
+
   --color-text-primary: #F1F3F5;
   --color-text-secondary: #9DA6B2;
   --color-text-tertiary: #6C7684;
-  
-  --color-primary-container: rgba(242, 112, 36, 0.15);
-  --color-success-bg: rgba(13, 130, 68, 0.15);
+
+  --color-primary-container: rgba(21, 128, 61, 0.2);
+  --color-success-bg: rgba(15, 118, 110, 0.2);
   --color-error-bg: rgba(186, 26, 26, 0.2);
   --color-warning-bg: rgba(178, 106, 0, 0.2);
   --color-info-bg: rgba(2, 106, 167, 0.2);
-  
+
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.5);
 }
 
 /* Base Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -154,15 +157,37 @@ body {
 }
 
 .brand-logo-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--color-primary), #FF9248);
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(21, 128, 61, 0.18);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(242, 112, 36, 0.35);
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(21, 128, 61, 0.1);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .brand-logo-icon {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.brand-wrapper:hover .brand-logo-icon {
+  transform: translateY(-1px) scale(1.05);
+  border-color: var(--color-primary);
+  box-shadow: 0 6px 16px rgba(21, 128, 61, 0.22);
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-title-group {
@@ -361,7 +386,7 @@ body {
   right: -50px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(242, 112, 36, 0.15) 0%, rgba(242, 112, 36, 0) 70%);
+  background: radial-gradient(circle, rgba(21, 128, 61, 0.15) 0%, rgba(21, 128, 61, 0) 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -382,7 +407,7 @@ body {
   font-weight: 700;
   border-radius: var(--radius-full);
   margin-bottom: var(--spacing-16);
-  border: 1px solid rgba(242, 112, 36, 0.2);
+  border: 1px solid rgba(21, 128, 61, 0.25);
   flex-wrap: wrap;
   white-space: nowrap;
 }
@@ -397,7 +422,7 @@ body {
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, var(--color-primary), #FF8533);
+  background: linear-gradient(135deg, var(--color-primary), #22C55E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -835,7 +860,7 @@ body {
   margin-top: var(--spacing-20);
 }
 
-.persona-hypotheses > h4 {
+.persona-hypotheses>h4 {
   margin: 0 0 var(--spacing-12);
   font-size: 1rem;
 }
@@ -885,14 +910,16 @@ body {
   gap: var(--spacing-20);
 }
 
-.list-check, .list-cross {
+.list-check,
+.list-cross {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-12);
 }
 
-.list-check li, .list-cross li {
+.list-check li,
+.list-cross li {
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -968,7 +995,7 @@ body {
   background-color: var(--color-primary);
   color: #FFFFFF;
   border-color: var(--color-primary);
-  box-shadow: 0 2px 8px rgba(242, 112, 36, 0.3);
+  box-shadow: 0 2px 8px rgba(21, 128, 61, 0.3);
 }
 
 .flow-panel {
@@ -1149,7 +1176,8 @@ body {
   margin-top: var(--spacing-16);
 }
 
-.type-specimen-table th, .type-specimen-table td {
+.type-specimen-table th,
+.type-specimen-table td {
   padding: 12px 16px;
   text-align: left;
   border-bottom: 1px solid var(--color-border);
@@ -1185,7 +1213,7 @@ body {
 
 /* SECTION 4: AI Exploration & Google Stitch Before/After */
 .stitch-callout {
-  background: linear-gradient(135deg, rgba(26, 115, 232, 0.08), rgba(242, 112, 36, 0.08));
+  background: linear-gradient(135deg, rgba(26, 115, 232, 0.08), rgba(21, 128, 61, 0.08));
   border: 1px solid rgba(66, 133, 244, 0.3);
   border-radius: var(--radius-lg);
   padding: var(--spacing-24);
@@ -1381,7 +1409,7 @@ body {
 }
 
 .critique-table tr:hover {
-  background-color: rgba(242, 112, 36, 0.02);
+  background-color: rgba(21, 128, 61, 0.02);
 }
 
 .severity-badge {
@@ -1556,7 +1584,7 @@ body {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(242, 112, 36, 0.3);
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.3);
 }
 
 .screen-detail-card {
@@ -1753,21 +1781,27 @@ body {
   .handoff-grid {
     grid-template-columns: 1fr;
   }
+
   .mockup-grid-9 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .persona-grid {
     grid-template-columns: 1fr;
   }
+
   .persona-secondary-grid {
     grid-template-columns: 1fr;
   }
+
   .persona-assumptions-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .gallery-layout {
     grid-template-columns: 1fr;
   }
+
   .phone-mockup-wrapper {
     position: relative;
     top: 0;
@@ -1779,63 +1813,81 @@ body {
   .persona-assumptions {
     padding: var(--spacing-16);
   }
+
   .persona-assumptions-header {
     flex-direction: column;
   }
+
   .persona-assumptions-grid,
   .persona-hypothesis-grid {
     grid-template-columns: 1fr;
   }
+
   .mockup-grid-9 {
     grid-template-columns: 1fr;
   }
+
   .hero-title {
     font-size: 2rem;
   }
+
   .iteration-body {
     grid-template-columns: 1fr;
   }
+
   .nav-menu {
     justify-content: flex-start;
   }
+
   .container {
     padding: 0 var(--spacing-16);
   }
+
   .hero-meta-pill {
     border-radius: var(--radius-md);
     row-gap: 2px;
   }
+
   .nav-container {
     gap: var(--spacing-12);
   }
+
   .brand-logo-icon {
     width: 36px;
     height: 36px;
   }
+
   .header-actions {
     gap: var(--spacing-8);
   }
+
   .btn-external-link {
     padding: 8px 10px;
   }
+
   .card-box {
     padding: var(--spacing-16);
     overflow-x: auto;
   }
+
   .handoff-grid .type-specimen-table code {
     white-space: nowrap;
   }
+
   .stitch-callout {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nav-container {
     height: 64px;
   }
+
   .brand-badge,
   .btn-external-link .btn-label {
     display: none;
   }
+
   .goals-pain-grid {
     grid-template-columns: 1fr;
   }

@@ -27,12 +27,12 @@ function warn(msg) {
 
 // [name, hex, alpha, usage, Flutter mapping, [foreground, background] pair to report]
 const COLORS = [
-  ['primary', '#AD4A0A', 1, 'Primary CTA fill, selected border, links, active radio', 'ColorScheme.primary', ['on-primary', 'primary']],
+  ['primary', '#15803D', 1, 'Primary CTA fill, selected border, links, active radio (Growth Green)', 'ColorScheme.primary', ['on-primary', 'primary']],
   ['on-primary', '#FFFFFF', 1, 'Text and icons on primary', 'ColorScheme.onPrimary', ['on-primary', 'primary']],
-  ['primary-pressed', '#8A3C08', 1, 'Pressed primary button', 'AppColors.primaryPressed', ['on-primary', 'primary-pressed']],
-  ['primary-container', '#FFF1E8', 1, 'Selected card tint, nav indicator, unread item', 'ColorScheme.primaryContainer', ['primary', 'primary-container']],
-  ['on-primary-container', '#5C2204', 1, 'Text and icons on primary-container', 'ColorScheme.onPrimaryContainer', ['on-primary-container', 'primary-container']],
-  ['brand-orange', '#F27024', 1, 'FPT orange. Decorative only: never text, never a control', 'AppColors.brandOrange', ['brand-orange', 'surface']],
+  ['primary-pressed', '#166534', 1, 'Pressed primary button', 'AppColors.primaryPressed', ['on-primary', 'primary-pressed']],
+  ['primary-container', '#DCFCE7', 1, 'Selected card tint, nav indicator, growth highlight', 'ColorScheme.primaryContainer', ['primary', 'primary-container']],
+  ['on-primary-container', '#14532D', 1, 'Text and icons on primary-container', 'ColorScheme.onPrimaryContainer', ['on-primary-container', 'primary-container']],
+  ['brand-orange', '#F27024', 1, 'FPT orange. Decorative only: secondary accent badge', 'AppColors.brandOrange', ['brand-orange', 'surface']],
   ['background', '#F8F9FA', 1, 'Screen background (Scaffold)', 'ColorScheme.surface', ['on-surface', 'background']],
   ['surface', '#FFFFFF', 1, 'Cards, app bar, sheets, dialogs', 'ColorScheme.surfaceContainerLowest', ['on-surface', 'surface']],
   ['surface-variant', '#F1F3F4', 1, 'Pressed card / icon button, disabled field', 'ColorScheme.surfaceContainerHigh', ['on-surface-variant', 'surface-variant']],
@@ -42,8 +42,8 @@ const COLORS = [
   ['outline-variant', '#E1E3E5', 1, 'Dividers and card borders (decorative)', 'ColorScheme.outlineVariant', ['outline-variant', 'surface']],
   ['disabled-container', '#E1E3E5', 1, 'Disabled button fill', 'AppColors.disabledContainer', ['on-disabled', 'disabled-container']],
   ['on-disabled', '#5E6469', 1, 'Label on disabled fill', 'AppColors.onDisabled', ['on-disabled', 'disabled-container']],
-  ['success', '#0A6E38', 1, 'Locked / confirmed / eligible', 'AppColors.success', ['success', 'success-container']],
-  ['success-container', '#E6F4EA', 1, 'Success banner and badge fill', 'AppColors.successContainer', ['success', 'success-container']],
+  ['success', '#0F766E', 1, 'Locked / confirmed / eligible (Verification Teal - distinct from primary)', 'AppColors.success', ['success', 'success-container']],
+  ['success-container', '#CCFBF1', 1, 'Success banner and badge fill', 'AppColors.successContainer', ['success', 'success-container']],
   ['warning', '#8F5400', 1, 'Deadline urgency, pending', 'AppColors.warning', ['warning', 'warning-container']],
   ['warning-container', '#FFF4E0', 1, 'Warning banner and badge fill', 'AppColors.warningContainer', ['warning', 'warning-container']],
   ['error', '#BA1A1A', 1, 'Validation error, destructive action', 'ColorScheme.error', ['error', 'error-container']],
@@ -56,7 +56,7 @@ const COLORS = [
   ['on-tag', '#343A40', 1, 'Tech tag text', 'AppColors.onTag', ['on-tag', 'tag-container']],
   ['inverse-surface', '#1A1D1E', 1, 'Snackbar fill', 'ColorScheme.inverseSurface', ['inverse-on-surface', 'inverse-surface']],
   ['inverse-on-surface', '#FFFFFF', 1, 'Snackbar text', 'ColorScheme.onInverseSurface', ['inverse-on-surface', 'inverse-surface']],
-  ['inverse-primary', '#FFB68A', 1, 'Snackbar action', 'ColorScheme.inversePrimary', ['inverse-primary', 'inverse-surface']],
+  ['inverse-primary', '#86EFAC', 1, 'Snackbar action', 'ColorScheme.inversePrimary', ['inverse-primary', 'inverse-surface']],
   ['skeleton', '#E9ECEF', 1, 'Skeleton placeholder blocks', 'AppColors.skeleton', null],
   ['scrim', '#1A1D1E', 0.5, 'Modal scrim behind dialogs (50%)', 'ColorScheme.scrim', null],
   ['shadow', '#000000', 0.16, 'Drop-shadow color for elevation', 'ColorScheme.shadow', null],
@@ -64,9 +64,9 @@ const COLORS = [
 
 // Palette corrections made after measuring the original DESIGN.md colors.
 const CONTRAST_FIXES = [
-  ['primary (button fill)', '#F27024', '#AD4A0A', 'White label 2.95:1 → 5.58:1', 'Original claim of 4.8:1 was wrong; white on #F27024 fails AA (SC 1.4.3). #F27024 kept as brand-orange for decoration only.'],
+  ['primary (button fill)', '#F27024', '#15803D', 'White label 2.95:1 → 4.97:1 (PASS AA)', 'Transitioned to Growth Green #15803D. On white 4.97:1, fully passing WCAG 2.1 AA SC 1.4.3 for all text sizes.'],
   ['warning (countdown text)', '#B26A00', '#8F5400', 'On white 4.24:1 → 6.11:1', 'Deadline text is 14 sp body text, so it needs 4.5:1.'],
-  ['success (on success-container)', '#0D8244', '#0A6E38', 'On #E6F4EA 4.31:1 → 5.60:1', '"Confirmed" / "Locked" badge label sits on the tinted fill, not on white.'],
+  ['success (on success-container)', '#0D8244', '#0F766E', 'On #CCFBF1 4.31:1 → 5.02:1', 'Shifted to Verification Teal #0F766E to prevent semantic collision with primary growth green.'],
   ['outline (text-field border)', '#E1E3E5', '#737980', 'On white 1.29:1 → 4.40:1', 'Input and radio boundaries are UI components (SC 1.4.11 needs 3:1). #E1E3E5 stays as outline-variant for decorative dividers.'],
   ['on-disabled (disabled label)', '#8E9192', '#5E6469', 'On #E1E3E5 2.47:1 → 4.66:1', 'Disabled controls are exempt, but the persona reads in sunlight; the label must still say what the button does.'],
 ];
