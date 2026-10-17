@@ -19,7 +19,8 @@
 ### 1. Color Contrast (WCAG 2.1 SC 1.4.3)
 - **Body Text:** `#1A1D1E` on `#FFFFFF` / `#F8F9FA` background $\rightarrow$ Contrast ratio **15.6:1** (Exceeds required 4.5:1, **PASS AAA**).
 - **Secondary Labels:** `#596066` on `#FFFFFF` $\rightarrow$ Contrast ratio **5.4:1** (Exceeds required 4.5:1, **PASS AA**).
-- **Primary Button:** `#FFFFFF` text on `#F27024` (FPT Orange) $\rightarrow$ Contrast ratio **4.8:1** (Exceeds required 4.5:1, **PASS AA**).
+- **Primary Button:** `#FFFFFF` text on `#15803D` (Growth Green) $\rightarrow$ Contrast ratio **4.97:1** (Exceeds required 4.5:1, **PASS AA** for all body and button text).
+- **Verification & Lock Badge:** `#0F766E` (Verification Teal) on `#CCFBF1` $\rightarrow$ Contrast ratio **5.0:1** (Exceeds required 4.5:1, **PASS AA**). Tách bạch với Primary Green nhằm đảm bảo **Nielsen Heuristic #1 (Visibility of System Status)**, tránh nhầm lẫn giữa nút thao tác và trạng thái đã khóa/hoàn thành.
 - **Error Banner:** `#BA1A1A` on `#FDF2F2` $\rightarrow$ Contrast ratio **6.2:1** (Exceeds required 4.5:1, **PASS AA**).
 
 ### 2. Touch Target Sizing (WCAG 2.1 SC 2.5.5)
